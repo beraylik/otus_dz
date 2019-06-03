@@ -12,6 +12,11 @@
 		F0335D9B22A55FC700077257 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0335D9922A55FC700077257 /* Main.storyboard */; };
 		F0335D9D22A55FCA00077257 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0335D9C22A55FCA00077257 /* Assets.xcassets */; };
 		F0335DA022A55FCA00077257 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0335D9E22A55FCA00077257 /* LaunchScreen.storyboard */; };
+		F0335DA922A562F500077257 /* MasterTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0335DA722A562F500077257 /* MasterTabBar.storyboard */; };
+		F0335DAB22A56C3700077257 /* ChangeImageBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0335DAA22A56C3700077257 /* ChangeImageBtn.swift */; };
+		F0335DAE22A5710D00077257 /* DetailSplitVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0335DAC22A5710D00077257 /* DetailSplitVC.storyboard */; };
+		F0335DB022A5712800077257 /* Component.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0335DAF22A5712800077257 /* Component.xib */; };
+		F0335DB222A5722300077257 /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0335DB122A5722300077257 /* Component.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		F0335D9C22A55FCA00077257 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0335D9F22A55FCA00077257 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0335DA122A55FCA00077257 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0335DA822A562F500077257 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = OtusDZ1/Base.lproj/MasterTabBar.storyboard; sourceTree = "<group>"; };
+		F0335DAA22A56C3700077257 /* ChangeImageBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeImageBtn.swift; sourceTree = "<group>"; };
+		F0335DAD22A5710D00077257 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = OtusDZ1/Base.lproj/DetailSplitVC.storyboard; sourceTree = "<group>"; };
+		F0335DAF22A5712800077257 /* Component.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Component.xib; sourceTree = "<group>"; };
+		F0335DB122A5722300077257 /* Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +67,11 @@
 				F0335D9522A55FC700077257 /* AppDelegate.swift */,
 				F0335D9722A55FC700077257 /* ViewController.swift */,
 				F0335D9922A55FC700077257 /* Main.storyboard */,
+				F0335DA722A562F500077257 /* MasterTabBar.storyboard */,
+				F0335DAC22A5710D00077257 /* DetailSplitVC.storyboard */,
+				F0335DAF22A5712800077257 /* Component.xib */,
+				F0335DAA22A56C3700077257 /* ChangeImageBtn.swift */,
+				F0335DB122A5722300077257 /* Component.swift */,
 				F0335D9C22A55FCA00077257 /* Assets.xcassets */,
 				F0335D9E22A55FCA00077257 /* LaunchScreen.storyboard */,
 				F0335DA122A55FCA00077257 /* Info.plist */,
@@ -123,7 +138,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0335DA022A55FCA00077257 /* LaunchScreen.storyboard in Resources */,
+				F0335DB022A5712800077257 /* Component.xib in Resources */,
 				F0335D9D22A55FCA00077257 /* Assets.xcassets in Resources */,
+				F0335DAE22A5710D00077257 /* DetailSplitVC.storyboard in Resources */,
+				F0335DA922A562F500077257 /* MasterTabBar.storyboard in Resources */,
 				F0335D9B22A55FC700077257 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,6 +153,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0335DAB22A56C3700077257 /* ChangeImageBtn.swift in Sources */,
+				F0335DB222A5722300077257 /* Component.swift in Sources */,
 				F0335D9822A55FC700077257 /* ViewController.swift in Sources */,
 				F0335D9622A55FC700077257 /* AppDelegate.swift in Sources */,
 			);
@@ -157,6 +177,22 @@
 				F0335D9F22A55FCA00077257 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F0335DA722A562F500077257 /* MasterTabBar.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0335DA822A562F500077257 /* Base */,
+			);
+			name = MasterTabBar.storyboard;
+			sourceTree = "<group>";
+		};
+		F0335DAC22A5710D00077257 /* DetailSplitVC.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0335DAD22A5710D00077257 /* Base */,
+			);
+			name = DetailSplitVC.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
