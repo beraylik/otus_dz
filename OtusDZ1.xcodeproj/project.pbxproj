@@ -17,6 +17,7 @@
 		F0335DAE22A5710D00077257 /* DetailSplitVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0335DAC22A5710D00077257 /* DetailSplitVC.storyboard */; };
 		F0335DB022A5712800077257 /* Component.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0335DAF22A5712800077257 /* Component.xib */; };
 		F0335DB222A5722300077257 /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0335DB122A5722300077257 /* Component.swift */; };
+		F0335DB422A6530100077257 /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0335DB322A6530100077257 /* SplitViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		F0335DAD22A5710D00077257 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = OtusDZ1/Base.lproj/DetailSplitVC.storyboard; sourceTree = "<group>"; };
 		F0335DAF22A5712800077257 /* Component.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Component.xib; sourceTree = "<group>"; };
 		F0335DB122A5722300077257 /* Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
+		F0335DB322A6530100077257 /* SplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				F0335DA722A562F500077257 /* MasterTabBar.storyboard */,
 				F0335DAC22A5710D00077257 /* DetailSplitVC.storyboard */,
 				F0335DAF22A5712800077257 /* Component.xib */,
+				F0335DB322A6530100077257 /* SplitViewController.swift */,
 				F0335DAA22A56C3700077257 /* ChangeImageBtn.swift */,
 				F0335DB122A5722300077257 /* Component.swift */,
 				F0335D9C22A55FCA00077257 /* Assets.xcassets */,
@@ -153,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0335DB422A6530100077257 /* SplitViewController.swift in Sources */,
 				F0335DAB22A56C3700077257 /* ChangeImageBtn.swift in Sources */,
 				F0335DB222A5722300077257 /* Component.swift in Sources */,
 				F0335D9822A55FC700077257 /* ViewController.swift in Sources */,
