@@ -18,6 +18,16 @@
 		F0335DB022A5712800077257 /* Component.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0335DAF22A5712800077257 /* Component.xib */; };
 		F0335DB222A5722300077257 /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0335DB122A5722300077257 /* Component.swift */; };
 		F0335DB422A6530100077257 /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0335DB322A6530100077257 /* SplitViewController.swift */; };
+		F041106D22A9850900D8E1B6 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F041106B22A9850900D8E1B6 /* Profile.storyboard */; };
+		F041106F22A98D2C00D8E1B6 /* DIagramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F041106E22A98D2C00D8E1B6 /* DIagramViewController.swift */; };
+		F041107422A98D8A00D8E1B6 /* ViewControllerLifecycleBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = F041107322A98D8A00D8E1B6 /* ViewControllerLifecycleBehavior.swift */; };
+		F041107722A98FC500D8E1B6 /* Diagram.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F041107622A98FC500D8E1B6 /* Diagram.xcassets */; };
+		F041107922A9900600D8E1B6 /* DiagramImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F041107822A9900600D8E1B6 /* DiagramImageProvider.swift */; };
+		F041107B22A990DC00D8E1B6 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = F041107A22A990DC00D8E1B6 /* Services.swift */; };
+		F041107D22B0EC8B00D8E1B6 /* BenchmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F041107C22B0EC8B00D8E1B6 /* BenchmarkViewController.swift */; };
+		F041107F22B0EDDF00D8E1B6 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F041107E22B0EDDF00D8E1B6 /* ProfileViewController.swift */; };
+		F041108222B0F8AB00D8E1B6 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F041108122B0F8AB00D8E1B6 /* FeedViewController.swift */; };
+		F041108422B0FB8000D8E1B6 /* FeedThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F041108322B0FB8000D8E1B6 /* FeedThreeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +44,16 @@
 		F0335DAF22A5712800077257 /* Component.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Component.xib; sourceTree = "<group>"; };
 		F0335DB122A5722300077257 /* Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
 		F0335DB322A6530100077257 /* SplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
+		F041106C22A9850900D8E1B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = OtusDZ1/OtusDZ1/Base.lproj/Profile.storyboard; sourceTree = "<group>"; };
+		F041106E22A98D2C00D8E1B6 /* DIagramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIagramViewController.swift; sourceTree = "<group>"; };
+		F041107322A98D8A00D8E1B6 /* ViewControllerLifecycleBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewControllerLifecycleBehavior.swift; path = ../../../../../../Downloads/ViewControllerLifecycleBehavior.swift; sourceTree = "<group>"; };
+		F041107622A98FC500D8E1B6 /* Diagram.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Diagram.xcassets; sourceTree = "<group>"; };
+		F041107822A9900600D8E1B6 /* DiagramImageProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagramImageProvider.swift; sourceTree = "<group>"; };
+		F041107A22A990DC00D8E1B6 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		F041107C22B0EC8B00D8E1B6 /* BenchmarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenchmarkViewController.swift; sourceTree = "<group>"; };
+		F041107E22B0EDDF00D8E1B6 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		F041108122B0F8AB00D8E1B6 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		F041108322B0FB8000D8E1B6 /* FeedThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedThreeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,10 +86,15 @@
 		F0335D9422A55FC700077257 /* OtusDZ1 */ = {
 			isa = PBXGroup;
 			children = (
+				F041108022B0F89800D8E1B6 /* Feed */,
+				F041107522A98EED00D8E1B6 /* Services */,
+				F041107022A98D4000D8E1B6 /* Behavior */,
+				F041106A22A984EE00D8E1B6 /* Profile */,
 				F0335D9522A55FC700077257 /* AppDelegate.swift */,
 				F0335D9722A55FC700077257 /* ViewController.swift */,
 				F0335D9922A55FC700077257 /* Main.storyboard */,
 				F0335DA722A562F500077257 /* MasterTabBar.storyboard */,
+				F041107C22B0EC8B00D8E1B6 /* BenchmarkViewController.swift */,
 				F0335DAC22A5710D00077257 /* DetailSplitVC.storyboard */,
 				F0335DAF22A5712800077257 /* Component.xib */,
 				F0335DB322A6530100077257 /* SplitViewController.swift */,
@@ -80,6 +105,43 @@
 				F0335DA122A55FCA00077257 /* Info.plist */,
 			);
 			path = OtusDZ1;
+			sourceTree = "<group>";
+		};
+		F041106A22A984EE00D8E1B6 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				F041106E22A98D2C00D8E1B6 /* DIagramViewController.swift */,
+				F041106B22A9850900D8E1B6 /* Profile.storyboard */,
+				F041107622A98FC500D8E1B6 /* Diagram.xcassets */,
+				F041107E22B0EDDF00D8E1B6 /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		F041107022A98D4000D8E1B6 /* Behavior */ = {
+			isa = PBXGroup;
+			children = (
+				F041107322A98D8A00D8E1B6 /* ViewControllerLifecycleBehavior.swift */,
+			);
+			path = Behavior;
+			sourceTree = "<group>";
+		};
+		F041107522A98EED00D8E1B6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F041107822A9900600D8E1B6 /* DiagramImageProvider.swift */,
+				F041107A22A990DC00D8E1B6 /* Services.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F041108022B0F89800D8E1B6 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				F041108122B0F8AB00D8E1B6 /* FeedViewController.swift */,
+				F041108322B0FB8000D8E1B6 /* FeedThreeViewController.swift */,
+			);
+			path = Feed;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +203,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0335DA022A55FCA00077257 /* LaunchScreen.storyboard in Resources */,
+				F041107722A98FC500D8E1B6 /* Diagram.xcassets in Resources */,
 				F0335DB022A5712800077257 /* Component.xib in Resources */,
 				F0335D9D22A55FCA00077257 /* Assets.xcassets in Resources */,
 				F0335DAE22A5710D00077257 /* DetailSplitVC.storyboard in Resources */,
 				F0335DA922A562F500077257 /* MasterTabBar.storyboard in Resources */,
+				F041106D22A9850900D8E1B6 /* Profile.storyboard in Resources */,
 				F0335D9B22A55FC700077257 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -156,11 +220,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F041107922A9900600D8E1B6 /* DiagramImageProvider.swift in Sources */,
 				F0335DB422A6530100077257 /* SplitViewController.swift in Sources */,
 				F0335DAB22A56C3700077257 /* ChangeImageBtn.swift in Sources */,
 				F0335DB222A5722300077257 /* Component.swift in Sources */,
+				F041107D22B0EC8B00D8E1B6 /* BenchmarkViewController.swift in Sources */,
 				F0335D9822A55FC700077257 /* ViewController.swift in Sources */,
+				F041108422B0FB8000D8E1B6 /* FeedThreeViewController.swift in Sources */,
+				F041107F22B0EDDF00D8E1B6 /* ProfileViewController.swift in Sources */,
+				F041106F22A98D2C00D8E1B6 /* DIagramViewController.swift in Sources */,
 				F0335D9622A55FC700077257 /* AppDelegate.swift in Sources */,
+				F041107B22A990DC00D8E1B6 /* Services.swift in Sources */,
+				F041108222B0F8AB00D8E1B6 /* FeedViewController.swift in Sources */,
+				F041107422A98D8A00D8E1B6 /* ViewControllerLifecycleBehavior.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +269,14 @@
 				F0335DAD22A5710D00077257 /* Base */,
 			);
 			name = DetailSplitVC.storyboard;
+			sourceTree = "<group>";
+		};
+		F041106B22A9850900D8E1B6 /* Profile.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F041106C22A9850900D8E1B6 /* Base */,
+			);
+			name = Profile.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TD2-1x-mg8">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--DetailVC-->
+        <scene sceneID="H0F-v2-kJt">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="DetailVC" id="r3x-Va-m3Q" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K6O-HU-Flf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2118" y="1479"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="EHL-No-wB3">
+            <objects>
+                <viewController id="TD2-1x-mg8" customClass="ProfileViewController" customModule="OtusDZ1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jg3-ED-sdG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noprofilepic" translatesAutoresizingMaskIntoConstraints="NO" id="W1H-c1-srS">
+                                <rect key="frame" x="24" y="68" width="128" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="77F-tG-3h5"/>
+                                    <constraint firstAttribute="height" constant="128" id="SDe-kz-5Wt"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QWg-ZE-gK9" customClass="ChangeImageBtn" customModule="OtusDZ1" customModuleProvider="target">
+                                <rect key="frame" x="160" y="114" width="170" height="36"/>
+                                <color key="backgroundColor" red="1" green="0.7946042592" blue="0.0091506515859999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="170" id="oO7-Mu-dRq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Change image">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="r3x-Va-m3Q" kind="show" id="eOn-rg-Qci"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QWg-ZE-gK9" firstAttribute="centerY" secondItem="W1H-c1-srS" secondAttribute="centerY" id="6Cq-Cp-66v"/>
+                            <constraint firstItem="W1H-c1-srS" firstAttribute="top" secondItem="umu-Na-HAf" secondAttribute="top" constant="24" id="HIj-A8-Rtg"/>
+                            <constraint firstItem="QWg-ZE-gK9" firstAttribute="leading" secondItem="W1H-c1-srS" secondAttribute="trailing" constant="8" symbolic="YES" id="ZMK-ge-ayk"/>
+                            <constraint firstItem="W1H-c1-srS" firstAttribute="leading" secondItem="umu-Na-HAf" secondAttribute="leading" constant="24" id="pMH-1p-x47"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="umu-Na-HAf"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Profile" id="lZv-YD-CyN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qvZ-IB-q0H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2060.8695652173915" y="1879.6875"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="ZsK-DD-Blo">
+            <objects>
+                <tableViewController id="5ZQ-5I-s4E" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="IjS-lo-zHn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection headerTitle="Section-1" id="2mC-3N-JEh">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="244" id="5vI-MI-t1D">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="244"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5vI-MI-t1D" id="BsL-YT-9Eh">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="243.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mGd-Wf-SRx">
+                                                    <rect key="frame" x="132" y="47" width="150" height="150"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="mGd-Wf-SRx" secondAttribute="height" multiplier="1:1" id="3yC-UU-0UJ"/>
+                                                        <constraint firstAttribute="height" constant="150" id="Et1-MX-GnT"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Button"/>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="mGd-Wf-SRx" firstAttribute="centerX" secondItem="BsL-YT-9Eh" secondAttribute="centerX" id="ax1-sI-6rM"/>
+                                                <constraint firstItem="mGd-Wf-SRx" firstAttribute="centerY" secondItem="BsL-YT-9Eh" secondAttribute="centerY" id="eHV-pA-dtB"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="KR3-Ss-2sb">
+                                        <rect key="frame" x="0.0" y="272" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KR3-Ss-2sb" id="epP-F4-FC8">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Текст вью" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vND-vN-0zD">
+                                                    <rect key="frame" x="36" y="11" width="348" height="22"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="vND-vN-0zD" secondAttribute="trailing" constant="10" id="KJS-mA-Q6N"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="vND-vN-0zD" secondAttribute="bottom" id="M1A-E2-Oub"/>
+                                                <constraint firstItem="vND-vN-0zD" firstAttribute="top" secondItem="epP-F4-FC8" secondAttribute="topMargin" id="j6o-Sf-LGS"/>
+                                                <constraint firstItem="vND-vN-0zD" firstAttribute="leading" secondItem="epP-F4-FC8" secondAttribute="leadingMargin" constant="16" id="qli-u7-OeO"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="nH4-q4-OT7" kind="show" id="FWq-gm-GIl"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Sno-JE-f9S">
+                                        <rect key="frame" x="0.0" y="316" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Sno-JE-f9S" id="mg4-kL-5qu">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="etu-mf-HEE">
+                                                    <rect key="frame" x="16" y="0.0" width="382" height="43.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="etu-mf-HEE" firstAttribute="top" secondItem="mg4-kL-5qu" secondAttribute="top" id="1JY-oN-0e9"/>
+                                                <constraint firstAttribute="bottom" secondItem="etu-mf-HEE" secondAttribute="bottom" id="ASq-Vf-vCw"/>
+                                                <constraint firstAttribute="trailing" secondItem="etu-mf-HEE" secondAttribute="trailing" constant="16" id="TcT-SM-t9R"/>
+                                                <constraint firstItem="etu-mf-HEE" firstAttribute="leading" secondItem="mg4-kL-5qu" secondAttribute="leading" constant="16" id="nAa-k1-B4t"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="5Ek-Ni-VYd" kind="show" id="pNX-Pm-2jc"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="qIy-Le-zLa">
+                                        <rect key="frame" x="0.0" y="360" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qIy-Le-zLa" id="XON-c0-cFf">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="6vw-GU-56o">
+                                        <rect key="frame" x="0.0" y="404" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6vw-GU-56o" id="dRA-NZ-Njk">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="mYg-VO-dP5">
+                                        <rect key="frame" x="0.0" y="448" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mYg-VO-dP5" id="naz-qj-lYj">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="4wI-GF-0gt">
+                                        <rect key="frame" x="0.0" y="492" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4wI-GF-0gt" id="83W-hD-mER">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="bLO-vA-uXX">
+                                        <rect key="frame" x="0.0" y="536" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bLO-vA-uXX" id="eZt-12-zaD">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="WcP-r6-B4q">
+                                        <rect key="frame" x="0.0" y="580" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WcP-r6-B4q" id="Kip-kt-cm7">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="GRJ-Us-3sA">
+                                        <rect key="frame" x="0.0" y="624" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GRJ-Us-3sA" id="KyU-tV-0XX">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="rbW-Rs-Yyn">
+                                        <rect key="frame" x="0.0" y="668" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rbW-Rs-Yyn" id="Cbb-cX-1Z9">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="aql-GB-yCH">
+                                        <rect key="frame" x="0.0" y="712" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aql-GB-yCH" id="9OL-Vv-9Nl">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="wIL-f3-T7Z">
+                                        <rect key="frame" x="0.0" y="756" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wIL-f3-T7Z" id="Ure-bl-P9P">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="UFe-Yu-oDY">
+                                        <rect key="frame" x="0.0" y="800" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UFe-Yu-oDY" id="7MA-ta-FhA">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="4R4-MA-DpJ">
+                                        <rect key="frame" x="0.0" y="844" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4R4-MA-DpJ" id="wbs-AG-9oa">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Section-2" id="tPp-lq-6TY">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="H5m-hE-e2o">
+                                        <rect key="frame" x="0.0" y="916" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="H5m-hE-e2o" id="qbo-Mb-plh">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="CNp-zP-oYt">
+                                        <rect key="frame" x="0.0" y="960" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CNp-zP-oYt" id="DCZ-bA-axE">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="NYL-L0-kiQ">
+                                        <rect key="frame" x="0.0" y="1004" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NYL-L0-kiQ" id="xxk-cK-S2A">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="5ZQ-5I-s4E" id="TAH-rm-Vpy"/>
+                            <outlet property="delegate" destination="5ZQ-5I-s4E" id="T7U-vz-e1t"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="efW-cx-JDU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2948" y="1880"/>
+        </scene>
+        <!--Iagram View Controller-->
+        <scene sceneID="RRU-ms-r8w">
+            <objects>
+                <viewController id="5Ek-Ni-VYd" customClass="DIagramViewController" customModule="OtusDZ1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yxK-ic-dcj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Uu-f0-pUx">
+                                <rect key="frame" x="0.0" y="229" width="414" height="438"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="delegate" destination="5Ek-Ni-VYd" id="4KQ-ut-qcK"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1Uu-f0-pUx" firstAttribute="leading" secondItem="z6N-Pi-8kE" secondAttribute="leading" id="7kc-si-8ut"/>
+                            <constraint firstItem="1Uu-f0-pUx" firstAttribute="centerY" secondItem="z6N-Pi-8kE" secondAttribute="centerY" constant="-5" id="CJl-9y-5GL"/>
+                            <constraint firstItem="1Uu-f0-pUx" firstAttribute="centerX" secondItem="z6N-Pi-8kE" secondAttribute="centerX" id="Ny6-GL-E4d"/>
+                            <constraint firstItem="1Uu-f0-pUx" firstAttribute="top" secondItem="z6N-Pi-8kE" secondAttribute="top" constant="185" id="b6u-pI-pK9"/>
+                            <constraint firstItem="z6N-Pi-8kE" firstAttribute="trailing" secondItem="1Uu-f0-pUx" secondAttribute="trailing" id="woK-kd-dLn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="z6N-Pi-8kE"/>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="1Uu-f0-pUx" id="uGX-0R-pu9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hER-xL-VVH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3911.594202898551" y="2153.5714285714284"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="LdK-dj-2Zh">
+            <objects>
+                <viewController id="nH4-q4-OT7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jh5-Pm-dMk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mNe-tr-1Dx">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rsv-Fd-oBs">
+                                        <rect key="frame" x="10" y="10" width="394" height="6117.5"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZLZ-ow-YHC">
+                                                <rect key="frame" x="10" y="10" width="374" height="6097.5"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <string key="text">Углекислый газ в атмосфере Земли является малой компонентой современной земной атмосферы, концентрация углекислого газа в сухом воздухе составляет 0,02÷0,04% (250÷450 ppm). Начиная с середины XIX века отмечается устойчивый рост количества этого газа в атмосфере, с ноября 2015 года его среднемесячная концентрация стабильно превышает 400 ppm[1].
+
+Роль углекислого газа (CO2, или диоксид углерода) в жизнедеятельности биосферы состоит прежде всего в поддержании фотосинтеза, который осуществляется растениями. Являясь парниковым газом, диоксид углерода в воздухе влияет на теплообмен планеты с окружающим пространством, эффективно блокируя переизлучаемое тепло на ряде частот, и таким образом участвует в формировании климата планеты[2].
+В обычном состоянии эти естественные источники находятся в равновесии с физическими и биологическими процессами, удаляющими диоксид углерода из атмосферы — часть CO2 растворяется в морской воде и часть удаляется из воздуха в процессе фотосинтеза. Так как обычно в ходе данного процесса поглощается 5,5⋅1011 т диоксида углерода в год, а его общая масса в земной атмосфере составляет 3,03 ⋅1012 т, то в среднем весь атмосферный CO2 участвует в углеродном цикле раз в шесть лет[12]. Из-за наличия антропогенных выбросов поглощение CO2 биосферой превосходило его выделение на ≈17 млрд тонн в середине 2000-х годов, скорость его поглощения имеет устойчивую тенденцию к увеличению вместе с ростом атмосферной концентрации[12][20].
+
+Антропогенная эмиссия[править | править код]
+
+Эмиссия углерода в атмосферу в результате пром. активности в 1800—2004 гг.
+С наступлением промышленной революции в середине XIX века происходило поступательное увеличение антропогенных выбросов диоксида углерода в атмосферу, что привело к нарушению баланса углеродного цикла и росту концентрации CO2. В настоящее время около 57 % производимого человечеством углекислого газа удаляется из атмосферы растениями и океанами[21]. Соотношение увеличения количества CO2 в атмосфере ко всему выделенному CO2 составляет постоянную величину порядка 45 % и претерпевает короткопериодические колебания и колебания с периодом в пять лет[20].
+
+Сжигание ископаемых топлив, таких как уголь, нефть и природный газ, является основной причиной эмиссии антропогенного CO2, вырубка лесов является второй по значимости причиной. В 2008 году в результате сжигания ископаемого топлива в атмосферу было выделено 8,67 млрд тонн углерода (31,8 млрд тонн CO2), в то время как в 1990 году годовая эмиссия углерода составляла 6,14 млрд тонн[22]. Сводка лесов под землепользование привела к увеличению содержания атмосферного диоксида углерода, эквивалентное сжиганию 1,2 млрд тонн угля в 2008 году (1,64 млрд тонн в 1990)[22]. Суммарное увеличение за 18 лет составляет 3 % от ежегодного естественного цикла CO2, что достаточно для выведения системы из равновесия и для ускоренного роста уровня CO2[23]. Как результат, диоксид углерода постепенно аккумулируется в атмосфере, и в 2009 году его концентрация на 39 % превысила доиндустриальное значение[24].
+
+Таким образом, несмотря на то, что (по состоянию на 2011 год) суммарное антропогенное выделение CO2 не превосходит 8 % от его естественного годового цикла, наблюдается увеличение концентрации, обусловленное не только уровнем антропогенных выбросов, но и постоянным ростом уровня выбросов со временем.
+
+Изменение температуры и углеродный цикл[править | править код]
+К другим факторам, увеличивающим содержание CO2 в атмосфере, следует отнести рост средней температуры в XX веке, что должно было отражаться в ускорении перегнивания органических остатков и, в силу прогрева океанов, в снижении общего количества диоксида углерода, растворяемого в воде. Увеличение температуры происходило в том числе по причине исключительно высокой солнечной активности в этот период и в XIX веке (см., например, событие Кэррингтона, 1859 г)[25].
+
+При переходе от условий холодного к теплому климату в течение последнего миллиона лет, естественное изменение концентрации атмосферного CO2 оставалось в пределах 100 ppm, то есть суммарное увеличение его содержания не превосходило 40 %[26]. При этом, например, средняя температура планеты в период климатического оптимума 9000÷5000 лет до н. э. была приблизительно на 1—2 °C выше современной, а из-за более сильно выраженного парникового эффекта в условиях тёплого климата среднегодовая аномалия температуры в субарктических широтах достигала 9 °C[27].
+
+Влияние вулканизма[править | править код]
+
+Извержение вулкана Пинатубо в 1991 г.
+Современный вулканизм в среднем приводит к выделению 2⋅108 тонн CO2 в год, что составляет величину менее 1 % от антропогенной эмиссии[18]. Основное отличие этого вида эмиссии от антропогенной состоит в том, что при сжигании ископаемых энергоносителей в воздухе происходит замещение молекул кислорода молекулами углекислого газа, то есть суммарное увеличение массы атмосферы соответствует массе сожжённого углерода, тогда как при вулканических извержениях происходит увеличение массы атмосферы на величину, равную массе выделенного газа.
+
+Углекислый газ — второй по количеству (после водяного пара) газ, выделяемый вулканами. Большинство газа, выделяемого подводными вулканами, оказывается растворённым в воде[28]. Изотопный состав выделяемого диоксида углерода примерно соответствует изотопному составу атмосферного CO2, получаемого в результате сжигания ископаемых энергоносителей, что затрудняет точное определение объёма вулканической эмиссии CO2[28].
+
+Крупные вулканические извержения могут приводить к значительному выделению диоксида углерода в атмосферу, но такие извержения происходят редко — несколько событий за столетие — и в среднем не оказывают заметного влияния на уровень эмиссии этого газа в атмосферу. Например, при извержении вулкана Лаки 1783 года выделилось примерно 90 млн тонн CO2, при извержении Тамбора в 1815 году около 48 млн тонн[28]. Отдельные исследования указывают на несколько бо́льшее выделение диоксида углерода при упомянутых выше извержениях (Лаки 1783 г, ≈6,5⋅108 т), но относительная редкость подобных событий делает их влияние на содержание углекислого газа несущественным и в этом случае[28].
+
+Последним извержением категории VEI 6 было извержение вулкана Пинатубо 1991 года. Его основное воздействие на содержание углекислого газа в атмосфере состояло в выделении аэрозолей в стратосферу и, как следствие, в нарушении баланса углеродного цикла из-за снижения на 0,5 °C средней температуры на планете по причине антипарникового эффекта. Увеличение амплитуды сезонных колебаний на графике Килинга в этот период времени указывает на некоторое улучшение условий для осуществления фотосинтеза растениями в начале 1990-х годов. Последнее объясняется эффектом рассеяния солнечного излучения на частицах стратосферного аэрозоля, что и привело к увеличению потребления атмосферного CO2 растительностью[29].
+
+Современная концентрация[править | править код]
+
+Изменение концентрации CO2 за 50 лет.
+Основная статья: График Килинга
+В современный период времени концентрация углекислого газа сохраняет устойчивый рост, в 2009 году средняя концентрация CO2 в земной атмосфере составляла 0,0387 % или 387 ppm, в сентябре 2016 года превысила 400 ppm.[30][31] Вместе с годовым ростом 2,20±0,01 ppm, в течение года наблюдается периодическое изменение концентрации амплитудой 3—9 ppm, которое следует за развитием вегетационного периода в Северном полушарии. Потому как в северной части планеты располагаются все основные континенты, влияние растительности Северного полушария доминирует в годовом цикле концентрации CO2. Уровень достигает максимума в мае и минимума в октябре, когда количество биомассы, осуществляющее фотосинтез, является наибольшим[32].
+
+Весной 2016 года австралийские ученые установили, что концентрация диоксида углерода в атмосфере в районе острова Тасмания достигла 400 ppm[33].
+
+В 2017 году Всемирная метеорологическая организация сообщила, что концентрация диоксида углерода в атмосфере Земли достигла самого высокого уровня за последние 800 тысяч лет уровня: 403,3 ppm[34].
+
+В апреле 2018 года по данным Погодной обсерватории на Мауна-Лоа, средняя концентрация CO2 достигла значения 410,26 ppm (или 0,041026 % углекислого газа в воздухе)[35]. Такой среднемесячный показатель наблюдается впервые за всю историю человеческой цивилизации[36].
+
+Изменение концентрации в прошлом[править | править код]
+Наиболее достоверным способом измерения концентраций атмосферного диоксида углерода в период времени до начала прямых измерений является определение его количества в пузырьках воздуха, заключенных в ледяных кернах из материковых ледников Антарктиды и Гренландии. Наиболее широко в этих целях используются антарктические керны, согласно которым уровень атмосферного CO2 оставался в пределах 260—284 ppm до начала промышленной революции в середине XIX века и на протяжении 10 тыс. лет до этого момента времени.[37] Отдельные исследования, основанные на изучении ископаемой листвы, указывают на гораздо более существенные изменения уровня CO2 в этот период (~300 ppm), но они подвергаются критике[38][39]. Также керны, взятые в Гренландии, указывают на бо́льшую степень изменения концентрации углекислого газа по сравнению с результатами, полученными в Антарктиде. Но при этом исследователи гренландских кернов предполагают, что бо́льшая вариативность здесь обусловлена локальными осадками карбоната кальция[40]. В случае низкого уровня пыли в образцах льда, взятого в Гренландии, данные по уровням CO2 в течение голоцена хорошо согласуются с данными из Антарктики.
+
+Наиболее продолжительный период измерений уровней CO2 на основании изучения ледяных кернов возможен в Восточной Антарктиде, где возраст льда достигает 800 тыс. лет, и который показывает, что концентрация диоксида углерода изменялась в пределах 180—210 ppm во время ледниковых периодов и увеличивалась до 280—300 ppm в более теплые периоды[5][26][41].
+
+
+Изменения концентрации атмосферного углекислого газа в течение фанерозоя (последние 541 млн лет, современность слева). В течение бо́льшей части последних 550 млн лет уровень CO2 значительно превосходил современный.
+На более продолжительных интервалах времени содержание атмосферного CO2 определяется на основании определения баланса геохимических процессов, включая определение количества материала органического происхождения в осадочных породах, выветривание силикатных пород и вулканизм в изучаемый период. На протяжении десятков миллионов лет в случае любого нарушения равновесия в цикле углерода происходило последующее уменьшение концентрации CO2. Потому как скорость этих процессов исключительно низка, установка взаимосвязи эмиссии диоксида углерода с последующим изменением его уровня в течение следующих сотен лет является сложной задачей.
+
+Для изучения концентрации углекислого газа в прошлом также используются различные косвенные (англ.)русск. методы датирования. Они включают определение соотношения изотопов бора и углерода в некоторых типах морских осадочных пород и количество устьиц в ископаемой листве растений. Несмотря на то, что эти измерения менее точны, чем данные по ледяным кернам, они позволяют определить очень высокие концентрации CO2 в прошлом, которые 150—200 млн лет назад составляли 3 000 ppm (0,3 %) и 400—600 млн лет назад — 6 000 ppm (0,6 %)[6].
+
+Снижение уровня атмосферного CO2 прекратилось в начале пермского периода, но продолжилось, начиная примерно с 60 млн лет назад. На рубеже эоцена и олигоцена (34 миллиона лет назад — начало формирования современного ледяного щита Антарктиды) количество CO2 составляло 760 ppm[42]. По геохимическим данным было установлено, что уровень углекислого газа в атмосфере достиг доиндустриального уровня 20 млн лет назад и составлял 300 ppm.
+
+Взаимосвязь с концентрацией в океане[править | править код]
+
+Обмен диоксидом углерода между водоёмами и воздухом
+В земных океанах диоксида углерода в сто раз больше, чем в атмосфере — 36⋅1012 тонн в пересчёте на углерод. Растворенный в воде CO2 содержится в виде гидрокарбонат- и карбонат-ионов. Гидрокарбонаты получаются в результате реакций между скальными породами, водой и CO2. Одним из примеров является разложение карбоната кальция:
+
+CaCO3 + CO2 + H2O ⇌ Ca2+ + 2 HCO3−
+Реакции, подобные этой, приводят к сглаживанию колебаний концентрации атмосферного CO2. Так как правая часть реакции содержит кислоту, добавление CO2 в левой части уменьшает pH, то есть приводит к закислению океана. Другие реакции между диоксидом углерода и некарбонатными породами тоже приводят к образованию угольной кислоты и его ионов.
+
+Данный процесс обратим, что приводит к образованию известняковых и других карбонатных пород с высвобождением половины гидрокарбонатов в виде CO2. В течение сотен миллионов лет этот процесс привёл к связыванию в карбонатных породах бо́льшей части первоначального диоксида углерода из протоатмосферы Земли. В конечном итоге большинство CO2, полученного в результате антропогенной эмиссии, будет растворено в океане, но скорость, с которой будет происходить этот процесс в будущем, остается не до конца определённой[43].
+
+Влияние концентрации CO2 в атмосфере на продуктивность растений (фотосинтеза)[править | править код]
+По способу фиксации CO2 подавляющее большинство растений относятся к типам фотосинтеза С3 и С4. К группе С3 принадлежит большинство известных видов растений (около 95% растительной биомассы Земли это С3-растения). К группе С4 принадлежат некоторые травянистые растения, в том числе важные сельскохозяйственные культуры: кукуруза, сахарный тростник, просо.
+
+С4-механизм фиксации углерода выработался как приспособление к условиям низких концентраций CO2 в атмосфере. Практически у всех видов растений рост концентрации CO2 в воздухе приводит к активизации фотосинтеза и ускорению роста.
+
+У С3-растений кривая начинает выходить на плато при концентрации CO2 более 1000 ppm.
+
+Однако у С4-растений рост скорости фотосинтеза прекращается уже при концентрации CO2 в 400 ppm. Поэтому современная его концентрация, составляющая на данный момент более 400 молекул на миллион (ppm), уже достигла оптимума для фотосинтеза у С4-растений, но всё еще очень далека от оптимума для С3-растений.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="ZLZ-ow-YHC" secondAttribute="trailing" constant="10" id="Ht4-AC-EtS"/>
+                                            <constraint firstItem="ZLZ-ow-YHC" firstAttribute="leading" secondItem="rsv-Fd-oBs" secondAttribute="leading" constant="10" id="IXh-tE-f0b"/>
+                                            <constraint firstItem="ZLZ-ow-YHC" firstAttribute="top" secondItem="rsv-Fd-oBs" secondAttribute="top" constant="10" id="TYg-gm-1on"/>
+                                            <constraint firstAttribute="bottom" secondItem="ZLZ-ow-YHC" secondAttribute="bottom" constant="10" id="Tsa-DL-jWg"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="rsv-Fd-oBs" secondAttribute="trailing" constant="10" id="B6G-jB-gs8"/>
+                                    <constraint firstAttribute="bottom" secondItem="rsv-Fd-oBs" secondAttribute="bottom" constant="10" id="GUz-qv-VxJ"/>
+                                    <constraint firstItem="rsv-Fd-oBs" firstAttribute="leading" secondItem="mNe-tr-1Dx" secondAttribute="leading" constant="10" id="KXQ-wg-tfe"/>
+                                    <constraint firstItem="rsv-Fd-oBs" firstAttribute="top" secondItem="mNe-tr-1Dx" secondAttribute="top" constant="10" id="OaS-Lb-C7b"/>
+                                    <constraint firstItem="rsv-Fd-oBs" firstAttribute="centerX" secondItem="mNe-tr-1Dx" secondAttribute="centerX" id="p2P-ma-lGy"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mNe-tr-1Dx" firstAttribute="top" secondItem="e9H-Ys-Oh5" secondAttribute="top" id="BDD-d4-iok"/>
+                            <constraint firstItem="mNe-tr-1Dx" firstAttribute="trailing" secondItem="e9H-Ys-Oh5" secondAttribute="trailing" id="gnP-hS-2rz"/>
+                            <constraint firstItem="mNe-tr-1Dx" firstAttribute="bottom" secondItem="e9H-Ys-Oh5" secondAttribute="bottom" id="kbe-bj-eHF"/>
+                            <constraint firstItem="mNe-tr-1Dx" firstAttribute="leading" secondItem="e9H-Ys-Oh5" secondAttribute="leading" id="tOX-XZ-7Mp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="e9H-Ys-Oh5"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TDU-48-mtj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3746" y="1389"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="noprofilepic" width="600" height="600"/>
+    </resources>
+</document>
