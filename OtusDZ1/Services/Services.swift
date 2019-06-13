@@ -13,4 +13,8 @@ class Services {
     static var diagramImageProvider: DiagramImageProvider = {
         return DiagramImageProvider()
     }()
+    
+    static var algoProvider: AlgoProvider = {
+        return AlgoProvider()
+    }()
 }

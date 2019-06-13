@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F0335D9622A55FC700077257 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0335D9522A55FC700077257 /* AppDelegate.swift */; };
-		F0335D9822A55FC700077257 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0335D9722A55FC700077257 /* ViewController.swift */; };
 		F0335D9B22A55FC700077257 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0335D9922A55FC700077257 /* Main.storyboard */; };
 		F0335D9D22A55FCA00077257 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0335D9C22A55FCA00077257 /* Assets.xcassets */; };
 		F0335DA022A55FCA00077257 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0335D9E22A55FCA00077257 /* LaunchScreen.storyboard */; };
@@ -28,12 +27,20 @@
 		F041107F22B0EDDF00D8E1B6 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F041107E22B0EDDF00D8E1B6 /* ProfileViewController.swift */; };
 		F041108222B0F8AB00D8E1B6 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F041108122B0F8AB00D8E1B6 /* FeedViewController.swift */; };
 		F041108422B0FB8000D8E1B6 /* FeedThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F041108322B0FB8000D8E1B6 /* FeedThreeViewController.swift */; };
+		F0CA58AB22B259A300D6B172 /* Benchmark.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0CA58A922B259A300D6B172 /* Benchmark.storyboard */; };
+		F0CA58AE22B25E6400D6B172 /* BenchmarkBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CA58AD22B25E6400D6B172 /* BenchmarkBehavior.swift */; };
+		F0CA58B322B25FF400D6B172 /* BenchmarkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CA58B122B25FF400D6B172 /* BenchmarkCell.swift */; };
+		F0CA58B422B25FF400D6B172 /* BenchmarkCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0CA58B222B25FF400D6B172 /* BenchmarkCell.xib */; };
+		F0CA58B622B2655900D6B172 /* AlgoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CA58B522B2655900D6B172 /* AlgoProvider.swift */; };
+		F0CA58B922B2680F00D6B172 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CA58B822B2680F00D6B172 /* UIColor+Extensions.swift */; };
+		F0CA58BC22B26A6200D6B172 /* StagLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CA58BB22B26A6200D6B172 /* StagLayout.swift */; };
+		F0CA58BE22B26AC700D6B172 /* StagLayoutFrameHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CA58BD22B26AC700D6B172 /* StagLayoutFrameHolder.swift */; };
+		F0CA58C022B26ADF00D6B172 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CA58BF22B26ADF00D6B172 /* Array+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F0335D9222A55FC700077257 /* OtusDZ1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OtusDZ1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0335D9522A55FC700077257 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F0335D9722A55FC700077257 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F0335D9A22A55FC700077257 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F0335D9C22A55FCA00077257 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0335D9F22A55FCA00077257 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,6 +61,15 @@
 		F041107E22B0EDDF00D8E1B6 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		F041108122B0F8AB00D8E1B6 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		F041108322B0FB8000D8E1B6 /* FeedThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedThreeViewController.swift; sourceTree = "<group>"; };
+		F0CA58AA22B259A300D6B172 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = OtusDZ1/OtusDZ1/Base.lproj/Benchmark.storyboard; sourceTree = "<group>"; };
+		F0CA58AD22B25E6400D6B172 /* BenchmarkBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenchmarkBehavior.swift; sourceTree = "<group>"; };
+		F0CA58B122B25FF400D6B172 /* BenchmarkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenchmarkCell.swift; sourceTree = "<group>"; };
+		F0CA58B222B25FF400D6B172 /* BenchmarkCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BenchmarkCell.xib; sourceTree = "<group>"; };
+		F0CA58B522B2655900D6B172 /* AlgoProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgoProvider.swift; sourceTree = "<group>"; };
+		F0CA58B822B2680F00D6B172 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		F0CA58BB22B26A6200D6B172 /* StagLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StagLayout.swift; sourceTree = "<group>"; };
+		F0CA58BD22B26AC700D6B172 /* StagLayoutFrameHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StagLayoutFrameHolder.swift; sourceTree = "<group>"; };
+		F0CA58BF22B26ADF00D6B172 /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,20 +102,16 @@
 		F0335D9422A55FC700077257 /* OtusDZ1 */ = {
 			isa = PBXGroup;
 			children = (
-				F041108022B0F89800D8E1B6 /* Feed */,
 				F041107522A98EED00D8E1B6 /* Services */,
-				F041107022A98D4000D8E1B6 /* Behavior */,
-				F041106A22A984EE00D8E1B6 /* Profile */,
 				F0335D9522A55FC700077257 /* AppDelegate.swift */,
-				F0335D9722A55FC700077257 /* ViewController.swift */,
+				F041108022B0F89800D8E1B6 /* Feed */,
+				F0CA58AC22B259B000D6B172 /* Benchmark */,
+				F041106A22A984EE00D8E1B6 /* Profile */,
+				F0CA58C122B26F8800D6B172 /* SplitViewController */,
 				F0335D9922A55FC700077257 /* Main.storyboard */,
 				F0335DA722A562F500077257 /* MasterTabBar.storyboard */,
-				F041107C22B0EC8B00D8E1B6 /* BenchmarkViewController.swift */,
-				F0335DAC22A5710D00077257 /* DetailSplitVC.storyboard */,
-				F0335DAF22A5712800077257 /* Component.xib */,
-				F0335DB322A6530100077257 /* SplitViewController.swift */,
-				F0335DAA22A56C3700077257 /* ChangeImageBtn.swift */,
-				F0335DB122A5722300077257 /* Component.swift */,
+				F041107022A98D4000D8E1B6 /* Behavior */,
+				F0CA58B722B267FA00D6B172 /* Extensions */,
 				F0335D9C22A55FCA00077257 /* Assets.xcassets */,
 				F0335D9E22A55FCA00077257 /* LaunchScreen.storyboard */,
 				F0335DA122A55FCA00077257 /* Info.plist */,
@@ -113,6 +125,7 @@
 				F041106E22A98D2C00D8E1B6 /* DIagramViewController.swift */,
 				F041106B22A9850900D8E1B6 /* Profile.storyboard */,
 				F041107622A98FC500D8E1B6 /* Diagram.xcassets */,
+				F0335DAA22A56C3700077257 /* ChangeImageBtn.swift */,
 				F041107E22B0EDDF00D8E1B6 /* ProfileViewController.swift */,
 			);
 			path = Profile;
@@ -131,6 +144,7 @@
 			children = (
 				F041107822A9900600D8E1B6 /* DiagramImageProvider.swift */,
 				F041107A22A990DC00D8E1B6 /* Services.swift */,
+				F0CA58B522B2655900D6B172 /* AlgoProvider.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -142,6 +156,48 @@
 				F041108322B0FB8000D8E1B6 /* FeedThreeViewController.swift */,
 			);
 			path = Feed;
+			sourceTree = "<group>";
+		};
+		F0CA58AC22B259B000D6B172 /* Benchmark */ = {
+			isa = PBXGroup;
+			children = (
+				F0CA58BA22B269F700D6B172 /* Layouts */,
+				F0CA58AD22B25E6400D6B172 /* BenchmarkBehavior.swift */,
+				F0CA58A922B259A300D6B172 /* Benchmark.storyboard */,
+				F041107C22B0EC8B00D8E1B6 /* BenchmarkViewController.swift */,
+				F0CA58B122B25FF400D6B172 /* BenchmarkCell.swift */,
+				F0CA58B222B25FF400D6B172 /* BenchmarkCell.xib */,
+			);
+			path = Benchmark;
+			sourceTree = "<group>";
+		};
+		F0CA58B722B267FA00D6B172 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F0CA58B822B2680F00D6B172 /* UIColor+Extensions.swift */,
+				F0CA58BF22B26ADF00D6B172 /* Array+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F0CA58BA22B269F700D6B172 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				F0CA58BB22B26A6200D6B172 /* StagLayout.swift */,
+				F0CA58BD22B26AC700D6B172 /* StagLayoutFrameHolder.swift */,
+			);
+			path = Layouts;
+			sourceTree = "<group>";
+		};
+		F0CA58C122B26F8800D6B172 /* SplitViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F0335DAC22A5710D00077257 /* DetailSplitVC.storyboard */,
+				F0335DB322A6530100077257 /* SplitViewController.swift */,
+				F0335DB122A5722300077257 /* Component.swift */,
+				F0335DAF22A5712800077257 /* Component.xib */,
+			);
+			path = SplitViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +259,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0335DA022A55FCA00077257 /* LaunchScreen.storyboard in Resources */,
+				F0CA58B422B25FF400D6B172 /* BenchmarkCell.xib in Resources */,
+				F0CA58AB22B259A300D6B172 /* Benchmark.storyboard in Resources */,
 				F041107722A98FC500D8E1B6 /* Diagram.xcassets in Resources */,
 				F0335DB022A5712800077257 /* Component.xib in Resources */,
 				F0335D9D22A55FCA00077257 /* Assets.xcassets in Resources */,
@@ -225,13 +283,19 @@
 				F0335DAB22A56C3700077257 /* ChangeImageBtn.swift in Sources */,
 				F0335DB222A5722300077257 /* Component.swift in Sources */,
 				F041107D22B0EC8B00D8E1B6 /* BenchmarkViewController.swift in Sources */,
-				F0335D9822A55FC700077257 /* ViewController.swift in Sources */,
 				F041108422B0FB8000D8E1B6 /* FeedThreeViewController.swift in Sources */,
+				F0CA58BE22B26AC700D6B172 /* StagLayoutFrameHolder.swift in Sources */,
 				F041107F22B0EDDF00D8E1B6 /* ProfileViewController.swift in Sources */,
+				F0CA58B322B25FF400D6B172 /* BenchmarkCell.swift in Sources */,
 				F041106F22A98D2C00D8E1B6 /* DIagramViewController.swift in Sources */,
+				F0CA58C022B26ADF00D6B172 /* Array+Extensions.swift in Sources */,
+				F0CA58AE22B25E6400D6B172 /* BenchmarkBehavior.swift in Sources */,
+				F0CA58B622B2655900D6B172 /* AlgoProvider.swift in Sources */,
 				F0335D9622A55FC700077257 /* AppDelegate.swift in Sources */,
 				F041107B22A990DC00D8E1B6 /* Services.swift in Sources */,
+				F0CA58BC22B26A6200D6B172 /* StagLayout.swift in Sources */,
 				F041108222B0F8AB00D8E1B6 /* FeedViewController.swift in Sources */,
+				F0CA58B922B2680F00D6B172 /* UIColor+Extensions.swift in Sources */,
 				F041107422A98D8A00D8E1B6 /* ViewControllerLifecycleBehavior.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,6 +341,14 @@
 				F041106C22A9850900D8E1B6 /* Base */,
 			);
 			name = Profile.storyboard;
+			sourceTree = "<group>";
+		};
+		F0CA58A922B259A300D6B172 /* Benchmark.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0CA58AA22B259A300D6B172 /* Base */,
+			);
+			name = Benchmark.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

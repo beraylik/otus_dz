@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pUm-XI-rnb">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Benchmark-->
+        <scene sceneID="6rR-wH-79U">
+            <objects>
+                <viewController id="ue1-oc-Luk" customClass="BenchmarkViewController" customModule="OtusDZ1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QTA-bs-1Xh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="NPm-m4-iG4">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hmR-hD-jD0">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="sra-eC-NBU">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="ue1-oc-Luk" id="66X-Nc-qa8"/>
+                                    <outlet property="delegate" destination="ue1-oc-Luk" id="bue-hC-6LN"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NPm-m4-iG4" firstAttribute="top" secondItem="1cD-Y4-Sms" secondAttribute="top" id="4At-Vv-NyX"/>
+                            <constraint firstItem="NPm-m4-iG4" firstAttribute="leading" secondItem="1cD-Y4-Sms" secondAttribute="leading" id="Pyd-pF-blO"/>
+                            <constraint firstItem="NPm-m4-iG4" firstAttribute="bottom" secondItem="1cD-Y4-Sms" secondAttribute="bottom" id="RUZ-c3-fLv"/>
+                            <constraint firstItem="NPm-m4-iG4" firstAttribute="trailing" secondItem="1cD-Y4-Sms" secondAttribute="trailing" id="gsG-eG-dLI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1cD-Y4-Sms"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Benchmark" id="NmR-da-d0t"/>
+                    <connections>
+                        <outlet property="collectionView" destination="NPm-m4-iG4" id="08W-FJ-x3y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EPq-Ie-T4K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2060.8695652173915" y="1204.6875"/>
+        </scene>
+        <!--Benchmark-->
+        <scene sceneID="dzy-32-dx9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pUm-XI-rnb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Benchmark" id="V5r-eo-8bE"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kJ1-LE-eY3">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ue1-oc-Luk" kind="relationship" relationship="rootViewController" id="Tvd-aU-H8K"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bgp-2X-vNx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1150.7246376811595" y="1204.6875"/>
+        </scene>
+    </scenes>
+</document>
