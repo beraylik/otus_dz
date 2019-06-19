@@ -14,19 +14,34 @@ final class BenchmarkViewController: UIViewController {
     
     private var dataSource: [Algo] = Services.algoProvider.sortings()
     
+    private let defaultLayouts: [UICollectionViewLayout] = [
+        StagLayout(widthHeightRatios: [(1.0, 1.0), (0.5, 0.5), (0.5, 1.5), (0.5, 1.0)], itemSpacing: 4),
+        StagLayout(widthHeightRatios: [(0.5, 0.5)], itemSpacing: 4),
+        StagLayout(widthHeightRatios: [(0.5, 0.5)], itemSpacing: 4),
+        StagLayout(widthHeightRatios: [(0.5, 0.5), (0.5, 1.5), (0.5, 1.0)], itemSpacing: 4)
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         addBehaviors(behaviors: [BenchmarkBehavior()])
         
-         collectionView.register(BenchmarkCell.nib, forCellWithReuseIdentifier: BenchmarkCell.cellId)
+        collectionView.register(BenchmarkCell.nib, forCellWithReuseIdentifier: BenchmarkCell.cellId)
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector(changeLayout))
+        
+        changeLayout()
     }
 
     @objc private func changeLayout() {
         print("Change layout")
         
-        collectionView.setCollectionViewLayout(StagLayout(widthHeightRatios: [(1.0, 1.0), (0.5, 0.5), (0.5, 1.5), (0.5, 1.0)], itemSpacing: 4), animated: true)
+        if let layout = defaultLayouts.randomElement() {
+            collectionView.setCollectionViewLayout(layout, animated: true)
+        }
+    }
+    
+    func invalidateTimers() {
+        collectionView.reloadData()
     }
     
 }
@@ -56,5 +71,12 @@ extension BenchmarkViewController: UICollectionViewDataSource {
 // MARK: - CollectionView Delegate
 
 extension BenchmarkViewController: UICollectionViewDelegate {
+ 
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let cell = collectionView.cellForItem(at: indexPath) as? BenchmarkCell else {
+            fatalError("Collection view Cell not found")
+        }
+        cell.toggleTimer()
+    }
     
 }

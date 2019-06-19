@@ -16,7 +16,13 @@ final class BenchmarkBehavior: ViewControllerLifecycleBehavior {
     var timer: Timer?
     
     func afterAppearing(_ viewController: UIViewController) {
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(runTimed), userInfo: nil, repeats: true)
+//        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(runTimed), userInfo: nil, repeats: true)
+    }
+    
+    func afterDisappearing(_ viewController: UIViewController) {
+        if let vc = viewController as? BenchmarkViewController {
+            vc.invalidateTimers()
+        }
     }
     
     @objc func runTimed() {
