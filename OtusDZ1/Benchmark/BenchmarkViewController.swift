@@ -16,7 +16,7 @@ final class BenchmarkViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        addBehaviors(behaviors: [BenchmarkBehavior()])
+        addBehaviors(behaviors: [BenchmarkBehavior()])
         
          collectionView.register(BenchmarkCell.nib, forCellWithReuseIdentifier: BenchmarkCell.cellId)
         

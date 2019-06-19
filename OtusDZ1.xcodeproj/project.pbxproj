@@ -19,7 +19,6 @@
 		F0335DB422A6530100077257 /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0335DB322A6530100077257 /* SplitViewController.swift */; };
 		F041106D22A9850900D8E1B6 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F041106B22A9850900D8E1B6 /* Profile.storyboard */; };
 		F041106F22A98D2C00D8E1B6 /* DIagramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F041106E22A98D2C00D8E1B6 /* DIagramViewController.swift */; };
-		F041107422A98D8A00D8E1B6 /* ViewControllerLifecycleBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = F041107322A98D8A00D8E1B6 /* ViewControllerLifecycleBehavior.swift */; };
 		F041107722A98FC500D8E1B6 /* Diagram.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F041107622A98FC500D8E1B6 /* Diagram.xcassets */; };
 		F041107922A9900600D8E1B6 /* DiagramImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F041107822A9900600D8E1B6 /* DiagramImageProvider.swift */; };
 		F041107B22A990DC00D8E1B6 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = F041107A22A990DC00D8E1B6 /* Services.swift */; };
@@ -36,6 +35,7 @@
 		F0CA58BC22B26A6200D6B172 /* StagLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CA58BB22B26A6200D6B172 /* StagLayout.swift */; };
 		F0CA58BE22B26AC700D6B172 /* StagLayoutFrameHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CA58BD22B26AC700D6B172 /* StagLayoutFrameHolder.swift */; };
 		F0CA58C022B26ADF00D6B172 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CA58BF22B26ADF00D6B172 /* Array+Extensions.swift */; };
+		F0CA58E322BAA7D800D6B172 /* ViewControllerLifecycleBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CA58E222BAA7D800D6B172 /* ViewControllerLifecycleBehavior.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,7 +53,6 @@
 		F0335DB322A6530100077257 /* SplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
 		F041106C22A9850900D8E1B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = OtusDZ1/OtusDZ1/Base.lproj/Profile.storyboard; sourceTree = "<group>"; };
 		F041106E22A98D2C00D8E1B6 /* DIagramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIagramViewController.swift; sourceTree = "<group>"; };
-		F041107322A98D8A00D8E1B6 /* ViewControllerLifecycleBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewControllerLifecycleBehavior.swift; path = ../../../../../../Downloads/ViewControllerLifecycleBehavior.swift; sourceTree = "<group>"; };
 		F041107622A98FC500D8E1B6 /* Diagram.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Diagram.xcassets; sourceTree = "<group>"; };
 		F041107822A9900600D8E1B6 /* DiagramImageProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagramImageProvider.swift; sourceTree = "<group>"; };
 		F041107A22A990DC00D8E1B6 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
@@ -70,6 +69,7 @@
 		F0CA58BB22B26A6200D6B172 /* StagLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StagLayout.swift; sourceTree = "<group>"; };
 		F0CA58BD22B26AC700D6B172 /* StagLayoutFrameHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StagLayoutFrameHolder.swift; sourceTree = "<group>"; };
 		F0CA58BF22B26ADF00D6B172 /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
+		F0CA58E222BAA7D800D6B172 /* ViewControllerLifecycleBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerLifecycleBehavior.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,7 +134,7 @@
 		F041107022A98D4000D8E1B6 /* Behavior */ = {
 			isa = PBXGroup;
 			children = (
-				F041107322A98D8A00D8E1B6 /* ViewControllerLifecycleBehavior.swift */,
+				F0CA58E222BAA7D800D6B172 /* ViewControllerLifecycleBehavior.swift */,
 			);
 			path = Behavior;
 			sourceTree = "<group>";
@@ -278,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0CA58E322BAA7D800D6B172 /* ViewControllerLifecycleBehavior.swift in Sources */,
 				F041107922A9900600D8E1B6 /* DiagramImageProvider.swift in Sources */,
 				F0335DB422A6530100077257 /* SplitViewController.swift in Sources */,
 				F0335DAB22A56C3700077257 /* ChangeImageBtn.swift in Sources */,
@@ -296,7 +297,6 @@
 				F0CA58BC22B26A6200D6B172 /* StagLayout.swift in Sources */,
 				F041108222B0F8AB00D8E1B6 /* FeedViewController.swift in Sources */,
 				F0CA58B922B2680F00D6B172 /* UIColor+Extensions.swift in Sources */,
-				F041107422A98D8A00D8E1B6 /* ViewControllerLifecycleBehavior.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

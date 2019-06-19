@@ -21,13 +21,13 @@ final class ProfileBehavior: ViewControllerLifecycleBehavior {
     // MARK: - Life cycle
     
     func beforeAppearing(_ viewController: UIViewController) {
-        delegate.setStatusBarStyle(style: .default)
+        delegate.setStatusBarStyle(style: .lightContent)
         viewController.view.backgroundColor = .black
         viewController.navigationController?.navigationBar.backgroundColor = .black
     }
     
     func afterDisappearing(_ viewController: UIViewController) {
-        delegate.setStatusBarStyle(style: .lightContent)
+        delegate.setStatusBarStyle(style: .default)
         viewController.navigationController?.navigationBar.backgroundColor = .white
     }
     
@@ -43,7 +43,7 @@ protocol ProfileProtocol {
 
 final class ProfileViewController: UIViewController, ProfileProtocol {
     
-    private var darkStatusBar: UIStatusBarStyle = .default
+    private var darkStatusBar: UIStatusBarStyle = .lightContent
     
     // MARK: - Life cycle
     
