@@ -60,7 +60,8 @@ extension BenchmarkViewController: UICollectionViewDataSource {
         }
         
         let algoItem = dataSource[indexPath.row]
-        cell.update(name: algoItem.name, color: UIColor.random)
+        cell.update(algo: algoItem)
+        
         
         return cell
     }

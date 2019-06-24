@@ -8,30 +8,50 @@
 
 import UIKit
 
-class BenchmarkCell: UICollectionViewCell {
+final class BenchmarkCell: UICollectionViewCell {
 
     private var timer: Timer?
-    private var interval: TimeInterval = 0
+    private var algo: Algo?
+    private var intervalOn: TimeInterval = 0
+    private var intervalOff: TimeInterval = 1
+    private var algoIsOn = false
+    
     
     static let cellId = String(describing: BenchmarkCell.self)
     static let nib = UINib(nibName: String(describing: BenchmarkCell.self), bundle: nil)
     
     @IBOutlet var label: UILabel!
     @IBOutlet weak var timerLabel: UILabel!
-    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var charView: MyPieChartView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        dropTimer()
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(runTimed), userInfo: nil, repeats: true)
     }
     
     deinit {
         dropTimer()
     }
     
-    func update(name: String, color: UIColor) {
-        label.text = name
-        backgroundColor = color
+    func update(algo: Algo) {
+        self.algo = algo
+        label.text = algo.name
+        backgroundColor = algo.color
+        intervalOn = algo.intervalOn
+        intervalOff = algo.intervalOff
+        
+        charView.backgroundColor = algo.color
+        charView.setSize(diameter: frame.height / 3)
+        updateChartData()
+    }
+    
+    private func updateChartData() {
+        let chartData = [
+            PieChartPiece(title: "OFF", value: CGFloat(intervalOff), color: UIColor.cyan),
+            PieChartPiece(title: "ON", value: CGFloat(intervalOn), color: UIColor.yellow)
+        ]
+        charView.updateValues(chartData)
+        charView.setNeedsDisplay()
     }
     
     @objc func runTimed() {
@@ -39,22 +59,22 @@ class BenchmarkCell: UICollectionViewCell {
             timerLabel.text = "00:00"
             return
         }
-        interval += timer.timeInterval
-        timerLabel.text = timeString(time: interval)
+        if algoIsOn {
+            intervalOn += timer.timeInterval
+            algo?.intervalOn = intervalOn
+            timerLabel.text = timeString(time: intervalOn)
+        } else {
+            intervalOff += timer.timeInterval
+            algo?.intervalOff = intervalOff
+        }
+        updateChartData()
     }
     
     func toggleTimer() {
-        if !activityIndicator.isAnimating {
-            activityIndicator.startAnimating()
-            timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(runTimed), userInfo: nil, repeats: true)
-        } else {
-            activityIndicator.stopAnimating()
-            timer?.invalidate()
-        }
+        algoIsOn = !algoIsOn
     }
     
     func dropTimer() {
-        activityIndicator.stopAnimating()
         timer?.invalidate()
     }
     
@@ -63,5 +83,5 @@ class BenchmarkCell: UICollectionViewCell {
         let seconds = Int(time) % 60
         return String(format:"%02i:%02i", minutes, seconds)
     }
-
+    
 }

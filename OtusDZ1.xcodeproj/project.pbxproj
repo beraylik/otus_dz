@@ -39,6 +39,8 @@
 		F0CA58E622BAAF4500D6B172 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0CA58E422BAAF4500D6B172 /* Feed.storyboard */; };
 		F0CA58E822BAB1AD00D6B172 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CA58E722BAB1AD00D6B172 /* UITableView+Extensions.swift */; };
 		F0CA58EA22BAB2E700D6B172 /* SessionSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CA58E922BAB2E700D6B172 /* SessionSummaryViewController.swift */; };
+		F0CA591322C1331500D6B172 /* MyPieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CA591222C1331500D6B172 /* MyPieChartView.swift */; };
+		F0CA591522C137A700D6B172 /* PieChartPiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CA591422C137A700D6B172 /* PieChartPiece.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +78,8 @@
 		F0CA58E522BAAF4500D6B172 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = OtusDZ1/OtusDZ1/Base.lproj/Feed.storyboard; sourceTree = "<group>"; };
 		F0CA58E722BAB1AD00D6B172 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
 		F0CA58E922BAB2E700D6B172 /* SessionSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionSummaryViewController.swift; sourceTree = "<group>"; };
+		F0CA591222C1331500D6B172 /* MyPieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPieChartView.swift; sourceTree = "<group>"; };
+		F0CA591422C137A700D6B172 /* PieChartPiece.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartPiece.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,7 @@
 				F041108022B0F89800D8E1B6 /* Feed */,
 				F0CA58AC22B259B000D6B172 /* Benchmark */,
 				F041106A22A984EE00D8E1B6 /* Profile */,
+				F0CA591122C1328E00D6B172 /* CustomViews */,
 				F0CA58C122B26F8800D6B172 /* SplitViewController */,
 				F0335D9922A55FC700077257 /* Main.storyboard */,
 				F0335DA722A562F500077257 /* MasterTabBar.storyboard */,
@@ -209,6 +214,23 @@
 			path = SplitViewController;
 			sourceTree = "<group>";
 		};
+		F0CA591122C1328E00D6B172 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				F0CA591622C137AC00D6B172 /* MyPieChart */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		F0CA591622C137AC00D6B172 /* MyPieChart */ = {
+			isa = PBXGroup;
+			children = (
+				F0CA591422C137A700D6B172 /* PieChartPiece.swift */,
+				F0CA591222C1331500D6B172 /* MyPieChartView.swift */,
+			);
+			path = MyPieChart;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -293,6 +315,7 @@
 				F0335DB422A6530100077257 /* SplitViewController.swift in Sources */,
 				F0335DAB22A56C3700077257 /* ChangeImageBtn.swift in Sources */,
 				F0335DB222A5722300077257 /* Component.swift in Sources */,
+				F0CA591322C1331500D6B172 /* MyPieChartView.swift in Sources */,
 				F041107D22B0EC8B00D8E1B6 /* BenchmarkViewController.swift in Sources */,
 				F041108422B0FB8000D8E1B6 /* FeedThreeViewController.swift in Sources */,
 				F0CA58BE22B26AC700D6B172 /* StagLayoutFrameHolder.swift in Sources */,
@@ -306,6 +329,7 @@
 				F0CA58EA22BAB2E700D6B172 /* SessionSummaryViewController.swift in Sources */,
 				F0CA58E822BAB1AD00D6B172 /* UITableView+Extensions.swift in Sources */,
 				F041107B22A990DC00D8E1B6 /* Services.swift in Sources */,
+				F0CA591522C137A700D6B172 /* PieChartPiece.swift in Sources */,
 				F0CA58BC22B26A6200D6B172 /* StagLayout.swift in Sources */,
 				F041108222B0F8AB00D8E1B6 /* FeedViewController.swift in Sources */,
 				F0CA58B922B2680F00D6B172 /* UIColor+Extensions.swift in Sources */,

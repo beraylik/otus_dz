@@ -28,9 +28,9 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="9aJ-Rx-kwj">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l75-P4-CmN" customClass="MyPieChartView" customModule="OtusDZ1" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="52.5" width="173" height="53"/>
-                            </activityIndicatorView>
+                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICM-2V-t4j">
                                 <rect key="frame" x="0.0" y="105.5" width="173" height="52.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -50,7 +50,7 @@
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="173" height="158"/>
             <connections>
-                <outlet property="activityIndicator" destination="9aJ-Rx-kwj" id="Jjs-xW-88c"/>
+                <outlet property="charView" destination="l75-P4-CmN" id="rVY-B7-p7I"/>
                 <outlet property="label" destination="LNp-yV-b6x" id="DKm-8z-2fI"/>
                 <outlet property="timerLabel" destination="ICM-2V-t4j" id="dGA-3B-oWq"/>
             </connections>
