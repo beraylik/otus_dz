@@ -41,6 +41,7 @@
 		F0CA58EA22BAB2E700D6B172 /* SessionSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CA58E922BAB2E700D6B172 /* SessionSummaryViewController.swift */; };
 		F0CA591322C1331500D6B172 /* MyPieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CA591222C1331500D6B172 /* MyPieChartView.swift */; };
 		F0CA591522C137A700D6B172 /* PieChartPiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CA591422C137A700D6B172 /* PieChartPiece.swift */; };
+		F0CA591822C2956400D6B172 /* JsonPlaceholderProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CA591722C2956400D6B172 /* JsonPlaceholderProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +81,7 @@
 		F0CA58E922BAB2E700D6B172 /* SessionSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionSummaryViewController.swift; sourceTree = "<group>"; };
 		F0CA591222C1331500D6B172 /* MyPieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPieChartView.swift; sourceTree = "<group>"; };
 		F0CA591422C137A700D6B172 /* PieChartPiece.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartPiece.swift; sourceTree = "<group>"; };
+		F0CA591722C2956400D6B172 /* JsonPlaceholderProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonPlaceholderProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 				F041107822A9900600D8E1B6 /* DiagramImageProvider.swift */,
 				F041107A22A990DC00D8E1B6 /* Services.swift */,
 				F0CA58B522B2655900D6B172 /* AlgoProvider.swift */,
+				F0CA591722C2956400D6B172 /* JsonPlaceholderProvider.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 				F0CA58AE22B25E6400D6B172 /* BenchmarkBehavior.swift in Sources */,
 				F0CA58B622B2655900D6B172 /* AlgoProvider.swift in Sources */,
 				F0335D9622A55FC700077257 /* AppDelegate.swift in Sources */,
+				F0CA591822C2956400D6B172 /* JsonPlaceholderProvider.swift in Sources */,
 				F0CA58EA22BAB2E700D6B172 /* SessionSummaryViewController.swift in Sources */,
 				F0CA58E822BAB1AD00D6B172 /* UITableView+Extensions.swift in Sources */,
 				F041107B22A990DC00D8E1B6 /* Services.swift in Sources */,

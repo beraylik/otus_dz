@@ -17,4 +17,8 @@ class Services {
     static var algoProvider: AlgoProvider = {
         return AlgoProvider()
     }()
+    
+    static var jsonProvider: JsonPlaceholderProvider = {
+        return JsonPlaceholderProvider()
+    }()
 }

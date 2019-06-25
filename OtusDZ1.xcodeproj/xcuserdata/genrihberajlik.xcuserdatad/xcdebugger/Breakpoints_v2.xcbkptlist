@@ -2,4 +2,54 @@
 <Bucket
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OtusDZ1/Feed/FeedViewController.swift"
+            timestampString = "583179084.480449"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "viewWillAppear(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;OtusDZ1.Placeholder&gt;, Swift.Error&gt;) -&gt; () in OtusDZ1.FeedViewController.viewWillAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "OtusDZ1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/genrihberajlik/Development/Xcode%20projects/OTUS/OtusDZ1/OtusDZ1/Feed/FeedViewController.swift"
+                  timestampString = "583178988.477671"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "288">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;OtusDZ1.Placeholder&gt;, Swift.Error&gt;) -&gt; () in OtusDZ1.FeedViewController.viewWillAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "OtusDZ1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/genrihberajlik/Development/Xcode%20projects/OTUS/OtusDZ1/OtusDZ1/Feed/FeedViewController.swift"
+                  timestampString = "583178988.480096"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "295">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

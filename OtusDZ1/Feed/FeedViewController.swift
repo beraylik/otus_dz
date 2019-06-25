@@ -20,10 +20,27 @@ class FeedViewController: UIViewController {
         "Item 21", "Item 22", "Item 23", "Item 24", "Item 25"
     ]
     
+    private var jsonPlaceholerProvider = Services.jsonProvider
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: UITableViewCell.cellId)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        jsonPlaceholerProvider.fetch(url: "/todos") { (result: Result<[Placeholder], Error>) in
+            
+            switch result {
+            case .failure(let error):
+                print(error.localizedDescription)
+            case .success(let responses):
+                for tuple in responses.enumerated() {
+                    print("\(tuple.offset): \(tuple.element.title)")
+                }
+            }
+            
+        }
     }
 
 }
