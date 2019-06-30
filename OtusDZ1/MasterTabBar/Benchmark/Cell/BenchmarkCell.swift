@@ -10,12 +10,8 @@ import UIKit
 
 final class BenchmarkCell: UICollectionViewCell {
 
-    private var timer: Timer?
     private var algo: Algo?
-    private var intervalOn: TimeInterval = 0
-    private var intervalOff: TimeInterval = 1
-    private var algoIsOn = false
-    
+    private var algoIsOn: Bool?
     
     static let cellId = String(describing: BenchmarkCell.self)
     static let nib = UINib(nibName: String(describing: BenchmarkCell.self), bundle: nil)
@@ -26,7 +22,7 @@ final class BenchmarkCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(runTimed), userInfo: nil, repeats: true)
+        NotificationCenter.default.addObserver(self, selector: #selector(runTimed(sender:)), name: .timerTick, object: nil)
     }
     
     deinit {
@@ -37,8 +33,10 @@ final class BenchmarkCell: UICollectionViewCell {
         self.algo = algo
         label.text = algo.name
         backgroundColor = algo.color
-        intervalOn = algo.intervalOn
-        intervalOff = algo.intervalOff
+        
+        let textColor: UIColor = algo.color.preffersDarkContent ? .black : .white
+        label.textColor = textColor
+        timerLabel.textColor = textColor
         
         charView.backgroundColor = algo.color
         charView.setSize(diameter: frame.height / 3)
@@ -46,36 +44,41 @@ final class BenchmarkCell: UICollectionViewCell {
     }
     
     private func updateChartData() {
+        guard let algo = algo else {
+            return
+        }
         let chartData = [
-            PieChartPiece(title: "OFF", value: CGFloat(intervalOff), color: UIColor.cyan),
-            PieChartPiece(title: "ON", value: CGFloat(intervalOn), color: UIColor.yellow)
+            PieChartPiece(title: "ON", value: CGFloat(algo.intervalOn), color: UIColor.niceGreen),
+            PieChartPiece(title: "OFF", value: CGFloat(algo.intervalOff), color: UIColor.niceRed)
         ]
         charView.updateValues(chartData)
         charView.setNeedsDisplay()
     }
     
-    @objc func runTimed() {
-        guard let timer = timer else {
+    @objc func runTimed(sender: Any) {
+        guard
+            let notif = sender as? NSNotification,
+            let timer = notif.object as? Timer,
+            let algo = algo
+        else {
             timerLabel.text = "00:00"
             return
         }
-        if algoIsOn {
-            intervalOn += timer.timeInterval
-            algo?.intervalOn = intervalOn
-            timerLabel.text = timeString(time: intervalOn)
-        } else {
-            intervalOff += timer.timeInterval
-            algo?.intervalOff = intervalOff
+        if algoIsOn == true {
+            algo.intervalOn += timer.timeInterval
+            timerLabel.text = timeString(time: algo.intervalOn)
+        } else if algoIsOn == false {
+            algo.intervalOff += timer.timeInterval
         }
         updateChartData()
     }
     
     func toggleTimer() {
-        algoIsOn = !algoIsOn
+        algoIsOn = !(algoIsOn ?? false)
     }
     
     func dropTimer() {
-        timer?.invalidate()
+        NotificationCenter.default.removeObserver(self, name: .timerTick, object: nil)
     }
     
     func timeString(time:TimeInterval) -> String {

@@ -8,13 +8,6 @@
 
 import UIKit
 
-
-extension NSNotification.Name {
-    
-    static let timerTick = NSNotification.Name.init(rawValue: "NSTimerTick")
-    
-}
-
 // MARK: - Behavior
 
 final class BenchmarkBehavior: ViewControllerLifecycleBehavior {
@@ -33,8 +26,7 @@ final class BenchmarkBehavior: ViewControllerLifecycleBehavior {
     }
     
     @objc func runTimed() {
-        print(Date())
-        NotificationCenter.default.post(name: .timerTick, object: nil)
+        NotificationCenter.default.post(name: .timerTick, object: timer)
     }
     
     func beforeDisappearing(_ viewController: UIViewController) {

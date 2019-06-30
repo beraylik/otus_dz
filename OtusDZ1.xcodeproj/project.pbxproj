@@ -43,6 +43,7 @@
 		F0CA591522C137A700D6B172 /* PieChartPiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CA591422C137A700D6B172 /* PieChartPiece.swift */; };
 		F0CA591822C2956400D6B172 /* JsonPlaceholderProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CA591722C2956400D6B172 /* JsonPlaceholderProvider.swift */; };
 		F0F1F8DC22C892E9009C5B86 /* Algo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F1F8DB22C892E9009C5B86 /* Algo.swift */; };
+		F0F1F8DE22C89610009C5B86 /* NSNotificationName+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F1F8DD22C89610009C5B86 /* NSNotificationName+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +85,7 @@
 		F0CA591422C137A700D6B172 /* PieChartPiece.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartPiece.swift; sourceTree = "<group>"; };
 		F0CA591722C2956400D6B172 /* JsonPlaceholderProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonPlaceholderProvider.swift; sourceTree = "<group>"; };
 		F0F1F8DB22C892E9009C5B86 /* Algo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Algo.swift; sourceTree = "<group>"; };
+		F0F1F8DD22C89610009C5B86 /* NSNotificationName+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSNotificationName+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +194,7 @@
 				F0CA58B822B2680F00D6B172 /* UIColor+Extensions.swift */,
 				F0CA58BF22B26ADF00D6B172 /* Array+Extensions.swift */,
 				F0CA58E722BAB1AD00D6B172 /* UITableView+Extensions.swift */,
+				F0F1F8DD22C89610009C5B86 /* NSNotificationName+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -354,6 +357,7 @@
 				F0335DAB22A56C3700077257 /* ChangeImageBtn.swift in Sources */,
 				F0335DB222A5722300077257 /* Component.swift in Sources */,
 				F0CA591322C1331500D6B172 /* MyPieChartView.swift in Sources */,
+				F0F1F8DE22C89610009C5B86 /* NSNotificationName+Extensions.swift in Sources */,
 				F041107D22B0EC8B00D8E1B6 /* BenchmarkViewController.swift in Sources */,
 				F041108422B0FB8000D8E1B6 /* FeedThreeViewController.swift in Sources */,
 				F0CA58BE22B26AC700D6B172 /* StagLayoutFrameHolder.swift in Sources */,

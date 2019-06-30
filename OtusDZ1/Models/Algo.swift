@@ -11,7 +11,7 @@ import UIKit
 class Algo {
     var name: String
     var intervalOn: TimeInterval = 0
-    var intervalOff: TimeInterval = 0
+    var intervalOff: TimeInterval = 1
     var color: UIColor
     
     init(name: String) {

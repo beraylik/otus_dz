@@ -70,7 +70,7 @@ final class MyPieChartView: UIView {
         }
         
         let radius = diameter / 2
-        let textPositionOffset: CGFloat = 0.67
+        let textPositionOffset: CGFloat = 0.5
         let viewCenter = bounds.center
         
         let totalSegmentsValue = values.reduce(0, { $0 + $1.value })
@@ -95,9 +95,9 @@ final class MyPieChartView: UIView {
             // Draw a label
             let halfAngle = startAngle + (endAngle - startAngle) * 0.5
             let segmentCenter = viewCenter.projected(by: radius * textPositionOffset, angle: halfAngle)
-            let textToRender = segment.title as NSString
-            let renderRect =  CGRect(centeredOn: segmentCenter, size: textToRender.size(withAttributes: textAttributes))
-            textToRender.draw(in: renderRect, withAttributes: textAttributes)
+            let textToRender = prepareTitleFor(segment)
+            let renderRect = CGRect(centeredOn: segmentCenter, size: textToRender.size())
+            textToRender.draw(in: renderRect)
             
             startAngle = endAngle
         }
@@ -111,11 +111,11 @@ final class MyPieChartView: UIView {
         let subTextColor: UIColor = segment.color.preffersDarkContent ? .darkGray : .lightGray
         
         let textAttributes: [NSAttributedString.Key: Any] = [
-            .font: UIFont.systemFont(ofSize: 14),
+            .font: UIFont.boldSystemFont(ofSize: 12),
             .foregroundColor: textColor
         ]
         let subTextAttributes: [NSAttributedString.Key: Any] = [
-            .font: UIFont.systemFont(ofSize: 12),
+            .font: UIFont.systemFont(ofSize: 10),
             .foregroundColor: subTextColor
         ]
         
@@ -142,36 +142,6 @@ private extension CGFloat {
     var radiansToDegrees: CGFloat {
         return self * 180 / .pi
     }
-}
-
-// MARK: - UIColot extensions
-
-extension UIColor {
-    
-    var preffersDarkContent: Bool {
-        return self.contrastWith(.white) < 4.5
-    }
-    
-    func contrastWith(_ color: UIColor) -> CGFloat {
-        let selfLuminance = UIColor.luminanceFor(self)
-        let otherLuminance = UIColor.luminanceFor(color)
-        return max(selfLuminance, otherLuminance) / min(selfLuminance, otherLuminance)
-    }
-    
-    static private func luminanceFor(_ color: UIColor) -> CGFloat {
-        let componets = color.cgColor.components ?? []
-        
-        var a: [CGFloat] = componets.map({
-            let devided = $0 / 255
-            if devided <= 0.03928 {
-                return devided / 12.92
-            } else {
-                return pow((devided + 0.055) / 1.055, 2.4)
-            }
-        })
-        return a[0] * 0.2126 + a[1] * 0.7152 + a[2] * 0.0722
-    }
-    
 }
 
 // MARK: - CGPoint extension
