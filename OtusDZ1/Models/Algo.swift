@@ -6,4 +6,16 @@
 //  Copyright © 2019 Генрих Берайлик. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class Algo {
+    var name: String
+    var intervalOn: TimeInterval = 0
+    var intervalOff: TimeInterval = 0
+    var color: UIColor
+    
+    init(name: String) {
+        self.name = name
+        self.color = UIColor.random
+    }
+}

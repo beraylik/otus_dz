@@ -42,6 +42,7 @@
 		F0CA591322C1331500D6B172 /* MyPieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CA591222C1331500D6B172 /* MyPieChartView.swift */; };
 		F0CA591522C137A700D6B172 /* PieChartPiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CA591422C137A700D6B172 /* PieChartPiece.swift */; };
 		F0CA591822C2956400D6B172 /* JsonPlaceholderProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CA591722C2956400D6B172 /* JsonPlaceholderProvider.swift */; };
+		F0F1F8DC22C892E9009C5B86 /* Algo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F1F8DB22C892E9009C5B86 /* Algo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +83,7 @@
 		F0CA591222C1331500D6B172 /* MyPieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPieChartView.swift; sourceTree = "<group>"; };
 		F0CA591422C137A700D6B172 /* PieChartPiece.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartPiece.swift; sourceTree = "<group>"; };
 		F0CA591722C2956400D6B172 /* JsonPlaceholderProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonPlaceholderProvider.swift; sourceTree = "<group>"; };
+		F0F1F8DB22C892E9009C5B86 /* Algo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Algo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,17 +116,15 @@
 		F0335D9422A55FC700077257 /* OtusDZ1 */ = {
 			isa = PBXGroup;
 			children = (
-				F041107522A98EED00D8E1B6 /* Services */,
 				F0335D9522A55FC700077257 /* AppDelegate.swift */,
-				F041108022B0F89800D8E1B6 /* Feed */,
-				F0CA58AC22B259B000D6B172 /* Benchmark */,
-				F041106A22A984EE00D8E1B6 /* Profile */,
+				F041107522A98EED00D8E1B6 /* Services */,
+				F0F1F8DA22C892DD009C5B86 /* Models */,
 				F0CA591122C1328E00D6B172 /* CustomViews */,
+				F0F1F8D822C88D98009C5B86 /* MasterTabBar */,
 				F0CA58C122B26F8800D6B172 /* SplitViewController */,
-				F0335D9922A55FC700077257 /* Main.storyboard */,
-				F0335DA722A562F500077257 /* MasterTabBar.storyboard */,
 				F041107022A98D4000D8E1B6 /* Behavior */,
 				F0CA58B722B267FA00D6B172 /* Extensions */,
+				F0335D9922A55FC700077257 /* Main.storyboard */,
 				F0335D9C22A55FCA00077257 /* Assets.xcassets */,
 				F0335D9E22A55FCA00077257 /* LaunchScreen.storyboard */,
 				F0335DA122A55FCA00077257 /* Info.plist */,
@@ -177,12 +177,11 @@
 		F0CA58AC22B259B000D6B172 /* Benchmark */ = {
 			isa = PBXGroup;
 			children = (
-				F0CA58BA22B269F700D6B172 /* Layouts */,
-				F0CA58AD22B25E6400D6B172 /* BenchmarkBehavior.swift */,
 				F0CA58A922B259A300D6B172 /* Benchmark.storyboard */,
+				F0CA58AD22B25E6400D6B172 /* BenchmarkBehavior.swift */,
 				F041107C22B0EC8B00D8E1B6 /* BenchmarkViewController.swift */,
-				F0CA58B122B25FF400D6B172 /* BenchmarkCell.swift */,
-				F0CA58B222B25FF400D6B172 /* BenchmarkCell.xib */,
+				F0F1F8D922C890D2009C5B86 /* Cell */,
+				F0CA58BA22B269F700D6B172 /* Layouts */,
 			);
 			path = Benchmark;
 			sourceTree = "<group>";
@@ -211,8 +210,6 @@
 			children = (
 				F0335DAC22A5710D00077257 /* DetailSplitVC.storyboard */,
 				F0335DB322A6530100077257 /* SplitViewController.swift */,
-				F0335DB122A5722300077257 /* Component.swift */,
-				F0335DAF22A5712800077257 /* Component.xib */,
 			);
 			path = SplitViewController;
 			sourceTree = "<group>";
@@ -220,6 +217,7 @@
 		F0CA591122C1328E00D6B172 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				F0F1F8D722C88D49009C5B86 /* Component */,
 				F0CA591622C137AC00D6B172 /* MyPieChart */,
 			);
 			path = CustomViews;
@@ -232,6 +230,43 @@
 				F0CA591222C1331500D6B172 /* MyPieChartView.swift */,
 			);
 			path = MyPieChart;
+			sourceTree = "<group>";
+		};
+		F0F1F8D722C88D49009C5B86 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				F0335DB122A5722300077257 /* Component.swift */,
+				F0335DAF22A5712800077257 /* Component.xib */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		F0F1F8D822C88D98009C5B86 /* MasterTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				F0335DA722A562F500077257 /* MasterTabBar.storyboard */,
+				F041108022B0F89800D8E1B6 /* Feed */,
+				F0CA58AC22B259B000D6B172 /* Benchmark */,
+				F041106A22A984EE00D8E1B6 /* Profile */,
+			);
+			path = MasterTabBar;
+			sourceTree = "<group>";
+		};
+		F0F1F8D922C890D2009C5B86 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F0CA58B122B25FF400D6B172 /* BenchmarkCell.swift */,
+				F0CA58B222B25FF400D6B172 /* BenchmarkCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		F0F1F8DA22C892DD009C5B86 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F0F1F8DB22C892E9009C5B86 /* Algo.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,6 +371,7 @@
 				F0CA591522C137A700D6B172 /* PieChartPiece.swift in Sources */,
 				F0CA58BC22B26A6200D6B172 /* StagLayout.swift in Sources */,
 				F041108222B0F8AB00D8E1B6 /* FeedViewController.swift in Sources */,
+				F0F1F8DC22C892E9009C5B86 /* Algo.swift in Sources */,
 				F0CA58B922B2680F00D6B172 /* UIColor+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

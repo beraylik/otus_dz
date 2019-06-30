@@ -20,7 +20,6 @@ struct PieChartPiece {
     
     // MARK: - Initialization
     
-    /// Will create random color if not passed in
     init(title: String, value: CGFloat, color: UIColor) {
         self.title = title
         self.value = value

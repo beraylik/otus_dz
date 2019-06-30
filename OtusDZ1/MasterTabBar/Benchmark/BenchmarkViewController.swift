@@ -40,7 +40,7 @@ final class BenchmarkViewController: UIViewController {
         }
     }
     
-    func invalidateTimers() {
+    func clearData() {
         collectionView.reloadData()
     }
     
@@ -61,7 +61,6 @@ extension BenchmarkViewController: UICollectionViewDataSource {
         
         let algoItem = dataSource[indexPath.row]
         cell.update(algo: algoItem)
-        
         
         return cell
     }
