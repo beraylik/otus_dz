@@ -8,7 +8,7 @@
 
 import UIKit
 
-
+typealias AlgoSuffixed = (suffix: SuffixSequence, algoName: String)
 
 struct AlgoProvider {
     
@@ -27,6 +27,21 @@ struct AlgoProvider {
             Algo(name: "Bubble Sort"),
             Algo(name: "Slow sort")
         ]
+    }
+    
+    func sortingsSuffixed() -> [SuffixSequence] {
+        return sortings().map({ (algo) -> SuffixSequence in
+            return algo.suffixed()
+        })
+    }
+    
+    func sortedSiffixes() -> [AlgoSuffixed] {
+        let result: [AlgoSuffixed] = sortings().map({ (algo) -> AlgoSuffixed in
+            let item: AlgoSuffixed = (algo.suffixed(), algo.name)
+            return item
+        })
+
+        return result.sorted(by: { $0.algoName < $1.algoName })
     }
     
 }

@@ -12,13 +12,7 @@ class FeedViewController: UIViewController {
 
     @IBOutlet var tableView: UITableView!
     
-    private var dataSource: [String] = [
-        "Item 1", "Item 2", "Item 3", "Item 4", "Item 5",
-        "Item 6", "Item 7", "Item 8", "Item 9", "Item 10",
-        "Item 11", "Item 12", "Item 13", "Item 14", "Item 15",
-        "Item 16", "Item 17", "Item 18", "Item 19", "Item 20",
-        "Item 21", "Item 22", "Item 23", "Item 24", "Item 25"
-    ]
+    private var dataSource: [FeedData] = Services.feedProvider.feedMockData()
     
     private var jsonPlaceholerProvider = Services.jsonProvider
     
@@ -56,7 +50,7 @@ extension FeedViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: UITableViewCell.cellId, for: indexPath)
         
-        cell.textLabel?.text = dataSource[indexPath.row]
+        cell.textLabel?.text = dataSource[indexPath.row].name
         
         return cell
     }
@@ -68,8 +62,32 @@ extension FeedViewController: UITableViewDataSource {
 extension FeedViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let targetVC = SessionSummaryViewController()
-        show(targetVC, sender: self)
+        
+        var vc: UIViewController?
+        
+        if let currentCell = tableView.cellForRow(at: indexPath), let name = currentCell.textLabel?.text {
+            switch name {
+            case "Array":
+                let storyboard = UIStoryboard(name: "DataStructures", bundle: nil)
+                vc = storyboard.instantiateViewController(withIdentifier: "ArrayViewController")
+            case "Set":
+                let storyboard = UIStoryboard(name: "DataStructures", bundle: nil)
+                vc = storyboard.instantiateViewController(withIdentifier: "SetViewController")
+            case "Dictionary":
+                let storyboard = UIStoryboard(name: "DataStructures", bundle: nil)
+                vc = storyboard.instantiateViewController(withIdentifier: "DictionaryViewController")
+            case "SuffixArray":
+                let storyboard = UIStoryboard(name: "DataStructures", bundle: nil)
+                vc = storyboard.instantiateViewController(withIdentifier: "SuffixSequenceViewController")
+            default:
+                vc = SessionSummaryViewController()
+            }
+        }
+        
+        
+        if let pushViewController = vc {
+            self.navigationController?.pushViewController(pushViewController, animated: true)
+        }
     }
     
 }

@@ -18,4 +18,8 @@ class Algo {
         self.name = name
         self.color = UIColor.random
     }
+    
+    func suffixed() -> SuffixSequence {
+        return SuffixSequence(string: name)
+    }
 }

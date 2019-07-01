@@ -44,6 +44,25 @@
 		F0CA591822C2956400D6B172 /* JsonPlaceholderProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CA591722C2956400D6B172 /* JsonPlaceholderProvider.swift */; };
 		F0F1F8DC22C892E9009C5B86 /* Algo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F1F8DB22C892E9009C5B86 /* Algo.swift */; };
 		F0F1F8DE22C89610009C5B86 /* NSNotificationName+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F1F8DD22C89610009C5B86 /* NSNotificationName+Extensions.swift */; };
+		F0F1F8E022C8A976009C5B86 /* SuffixSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F1F8DF22C8A976009C5B86 /* SuffixSequence.swift */; };
+		F0F1F8F222C8B07C009C5B86 /* ArrayManipulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F1F8E822C8B07C009C5B86 /* ArrayManipulator.swift */; };
+		F0F1F8F322C8B07C009C5B86 /* SwiftArrayManipulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F1F8E922C8B07C009C5B86 /* SwiftArrayManipulator.swift */; };
+		F0F1F8F422C8B07C009C5B86 /* StringGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F1F8EA22C8B07C009C5B86 /* StringGenerator.swift */; };
+		F0F1F8F522C8B07C009C5B86 /* SwiftDictionaryManipulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F1F8EC22C8B07C009C5B86 /* SwiftDictionaryManipulator.swift */; };
+		F0F1F8F622C8B07C009C5B86 /* DictionaryManipulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F1F8ED22C8B07C009C5B86 /* DictionaryManipulator.swift */; };
+		F0F1F8F722C8B07C009C5B86 /* SwiftSetManipulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F1F8EF22C8B07C009C5B86 /* SwiftSetManipulator.swift */; };
+		F0F1F8F822C8B07C009C5B86 /* SetManipulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F1F8F022C8B07C009C5B86 /* SetManipulator.swift */; };
+		F0F1F8F922C8B07C009C5B86 /* Profiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F1F8F122C8B07C009C5B86 /* Profiler.swift */; };
+		F0F1F8FC22C8E3C9009C5B86 /* SuffixManipulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F1F8FB22C8E3C9009C5B86 /* SuffixManipulator.swift */; };
+		F0F1F8FE22C8E453009C5B86 /* SwiftSequencemanipulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F1F8FD22C8E453009C5B86 /* SwiftSequencemanipulator.swift */; };
+		F0F1F90422C8F000009C5B86 /* ArrayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F1F90022C8F000009C5B86 /* ArrayViewController.swift */; };
+		F0F1F90522C8F000009C5B86 /* DictionaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F1F90122C8F000009C5B86 /* DictionaryViewController.swift */; };
+		F0F1F90622C8F000009C5B86 /* SetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F1F90222C8F000009C5B86 /* SetViewController.swift */; };
+		F0F1F90722C8F000009C5B86 /* DataStructuresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F1F90322C8F000009C5B86 /* DataStructuresViewController.swift */; };
+		F0F1F90922C8F03A009C5B86 /* FeedDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F1F90822C8F03A009C5B86 /* FeedDataProvider.swift */; };
+		F0F1F90B22C8F041009C5B86 /* FeedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F1F90A22C8F041009C5B86 /* FeedData.swift */; };
+		F0F1F90D22C8F119009C5B86 /* DataStructures.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0F1F90C22C8F119009C5B86 /* DataStructures.storyboard */; };
+		F0F1F90F22C8F159009C5B86 /* SuffixSequenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F1F90E22C8F159009C5B86 /* SuffixSequenceViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +105,25 @@
 		F0CA591722C2956400D6B172 /* JsonPlaceholderProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonPlaceholderProvider.swift; sourceTree = "<group>"; };
 		F0F1F8DB22C892E9009C5B86 /* Algo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Algo.swift; sourceTree = "<group>"; };
 		F0F1F8DD22C89610009C5B86 /* NSNotificationName+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSNotificationName+Extensions.swift"; sourceTree = "<group>"; };
+		F0F1F8DF22C8A976009C5B86 /* SuffixSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixSequence.swift; sourceTree = "<group>"; };
+		F0F1F8E822C8B07C009C5B86 /* ArrayManipulator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayManipulator.swift; sourceTree = "<group>"; };
+		F0F1F8E922C8B07C009C5B86 /* SwiftArrayManipulator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftArrayManipulator.swift; sourceTree = "<group>"; };
+		F0F1F8EA22C8B07C009C5B86 /* StringGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringGenerator.swift; sourceTree = "<group>"; };
+		F0F1F8EC22C8B07C009C5B86 /* SwiftDictionaryManipulator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftDictionaryManipulator.swift; sourceTree = "<group>"; };
+		F0F1F8ED22C8B07C009C5B86 /* DictionaryManipulator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryManipulator.swift; sourceTree = "<group>"; };
+		F0F1F8EF22C8B07C009C5B86 /* SwiftSetManipulator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftSetManipulator.swift; sourceTree = "<group>"; };
+		F0F1F8F022C8B07C009C5B86 /* SetManipulator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetManipulator.swift; sourceTree = "<group>"; };
+		F0F1F8F122C8B07C009C5B86 /* Profiler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profiler.swift; sourceTree = "<group>"; };
+		F0F1F8FB22C8E3C9009C5B86 /* SuffixManipulator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixManipulator.swift; sourceTree = "<group>"; };
+		F0F1F8FD22C8E453009C5B86 /* SwiftSequencemanipulator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSequencemanipulator.swift; sourceTree = "<group>"; };
+		F0F1F90022C8F000009C5B86 /* ArrayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayViewController.swift; sourceTree = "<group>"; };
+		F0F1F90122C8F000009C5B86 /* DictionaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryViewController.swift; sourceTree = "<group>"; };
+		F0F1F90222C8F000009C5B86 /* SetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetViewController.swift; sourceTree = "<group>"; };
+		F0F1F90322C8F000009C5B86 /* DataStructuresViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStructuresViewController.swift; sourceTree = "<group>"; };
+		F0F1F90822C8F03A009C5B86 /* FeedDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedDataProvider.swift; sourceTree = "<group>"; };
+		F0F1F90A22C8F041009C5B86 /* FeedData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedData.swift; sourceTree = "<group>"; };
+		F0F1F90C22C8F119009C5B86 /* DataStructures.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DataStructures.storyboard; sourceTree = "<group>"; };
+		F0F1F90E22C8F159009C5B86 /* SuffixSequenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixSequenceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +198,7 @@
 				F041107822A9900600D8E1B6 /* DiagramImageProvider.swift */,
 				F041107A22A990DC00D8E1B6 /* Services.swift */,
 				F0CA58B522B2655900D6B172 /* AlgoProvider.swift */,
+				F0F1F90822C8F03A009C5B86 /* FeedDataProvider.swift */,
 				F0CA591722C2956400D6B172 /* JsonPlaceholderProvider.swift */,
 			);
 			path = Services;
@@ -169,9 +208,11 @@
 			isa = PBXGroup;
 			children = (
 				F0CA58E422BAAF4500D6B172 /* Feed.storyboard */,
+				F0F1F8FF22C8F000009C5B86 /* DataStructureVCs */,
 				F041108122B0F8AB00D8E1B6 /* FeedViewController.swift */,
 				F041108322B0FB8000D8E1B6 /* FeedThreeViewController.swift */,
 				F0CA58E922BAB2E700D6B172 /* SessionSummaryViewController.swift */,
+				F0F1F8E522C8B07C009C5B86 /* Profiler */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -268,8 +309,80 @@
 			isa = PBXGroup;
 			children = (
 				F0F1F8DB22C892E9009C5B86 /* Algo.swift */,
+				F0F1F90A22C8F041009C5B86 /* FeedData.swift */,
+				F0F1F8DF22C8A976009C5B86 /* SuffixSequence.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		F0F1F8E522C8B07C009C5B86 /* Profiler */ = {
+			isa = PBXGroup;
+			children = (
+				F0F1F8E622C8B07C009C5B86 /* DataStructures */,
+				F0F1F8F122C8B07C009C5B86 /* Profiler.swift */,
+			);
+			path = Profiler;
+			sourceTree = "<group>";
+		};
+		F0F1F8E622C8B07C009C5B86 /* DataStructures */ = {
+			isa = PBXGroup;
+			children = (
+				F0F1F8FA22C8B3FF009C5B86 /* SuffixSequence */,
+				F0F1F8E722C8B07C009C5B86 /* Array */,
+				F0F1F8EA22C8B07C009C5B86 /* StringGenerator.swift */,
+				F0F1F8EB22C8B07C009C5B86 /* Dictionary */,
+				F0F1F8EE22C8B07C009C5B86 /* Set */,
+			);
+			path = DataStructures;
+			sourceTree = "<group>";
+		};
+		F0F1F8E722C8B07C009C5B86 /* Array */ = {
+			isa = PBXGroup;
+			children = (
+				F0F1F8E822C8B07C009C5B86 /* ArrayManipulator.swift */,
+				F0F1F8E922C8B07C009C5B86 /* SwiftArrayManipulator.swift */,
+			);
+			path = Array;
+			sourceTree = "<group>";
+		};
+		F0F1F8EB22C8B07C009C5B86 /* Dictionary */ = {
+			isa = PBXGroup;
+			children = (
+				F0F1F8EC22C8B07C009C5B86 /* SwiftDictionaryManipulator.swift */,
+				F0F1F8ED22C8B07C009C5B86 /* DictionaryManipulator.swift */,
+			);
+			path = Dictionary;
+			sourceTree = "<group>";
+		};
+		F0F1F8EE22C8B07C009C5B86 /* Set */ = {
+			isa = PBXGroup;
+			children = (
+				F0F1F8EF22C8B07C009C5B86 /* SwiftSetManipulator.swift */,
+				F0F1F8F022C8B07C009C5B86 /* SetManipulator.swift */,
+			);
+			path = Set;
+			sourceTree = "<group>";
+		};
+		F0F1F8FA22C8B3FF009C5B86 /* SuffixSequence */ = {
+			isa = PBXGroup;
+			children = (
+				F0F1F8FB22C8E3C9009C5B86 /* SuffixManipulator.swift */,
+				F0F1F8FD22C8E453009C5B86 /* SwiftSequencemanipulator.swift */,
+			);
+			path = SuffixSequence;
+			sourceTree = "<group>";
+		};
+		F0F1F8FF22C8F000009C5B86 /* DataStructureVCs */ = {
+			isa = PBXGroup;
+			children = (
+				F0F1F90C22C8F119009C5B86 /* DataStructures.storyboard */,
+				F0F1F90022C8F000009C5B86 /* ArrayViewController.swift */,
+				F0F1F90122C8F000009C5B86 /* DictionaryViewController.swift */,
+				F0F1F90222C8F000009C5B86 /* SetViewController.swift */,
+				F0F1F90E22C8F159009C5B86 /* SuffixSequenceViewController.swift */,
+				F0F1F90322C8F000009C5B86 /* DataStructuresViewController.swift */,
+			);
+			path = DataStructureVCs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,6 +449,7 @@
 				F041107722A98FC500D8E1B6 /* Diagram.xcassets in Resources */,
 				F0335DB022A5712800077257 /* Component.xib in Resources */,
 				F0335D9D22A55FCA00077257 /* Assets.xcassets in Resources */,
+				F0F1F90D22C8F119009C5B86 /* DataStructures.storyboard in Resources */,
 				F0335DAE22A5710D00077257 /* DetailSplitVC.storyboard in Resources */,
 				F0335DA922A562F500077257 /* MasterTabBar.storyboard in Resources */,
 				F041106D22A9850900D8E1B6 /* Profile.storyboard in Resources */,
@@ -352,30 +466,48 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0CA58E322BAA7D800D6B172 /* ViewControllerLifecycleBehavior.swift in Sources */,
+				F0F1F8E022C8A976009C5B86 /* SuffixSequence.swift in Sources */,
 				F041107922A9900600D8E1B6 /* DiagramImageProvider.swift in Sources */,
 				F0335DB422A6530100077257 /* SplitViewController.swift in Sources */,
+				F0F1F8F722C8B07C009C5B86 /* SwiftSetManipulator.swift in Sources */,
+				F0F1F8F222C8B07C009C5B86 /* ArrayManipulator.swift in Sources */,
 				F0335DAB22A56C3700077257 /* ChangeImageBtn.swift in Sources */,
 				F0335DB222A5722300077257 /* Component.swift in Sources */,
 				F0CA591322C1331500D6B172 /* MyPieChartView.swift in Sources */,
+				F0F1F8F922C8B07C009C5B86 /* Profiler.swift in Sources */,
+				F0F1F90922C8F03A009C5B86 /* FeedDataProvider.swift in Sources */,
 				F0F1F8DE22C89610009C5B86 /* NSNotificationName+Extensions.swift in Sources */,
 				F041107D22B0EC8B00D8E1B6 /* BenchmarkViewController.swift in Sources */,
+				F0F1F8F422C8B07C009C5B86 /* StringGenerator.swift in Sources */,
+				F0F1F90722C8F000009C5B86 /* DataStructuresViewController.swift in Sources */,
 				F041108422B0FB8000D8E1B6 /* FeedThreeViewController.swift in Sources */,
+				F0F1F90B22C8F041009C5B86 /* FeedData.swift in Sources */,
 				F0CA58BE22B26AC700D6B172 /* StagLayoutFrameHolder.swift in Sources */,
+				F0F1F90F22C8F159009C5B86 /* SuffixSequenceViewController.swift in Sources */,
+				F0F1F8F522C8B07C009C5B86 /* SwiftDictionaryManipulator.swift in Sources */,
 				F041107F22B0EDDF00D8E1B6 /* ProfileViewController.swift in Sources */,
 				F0CA58B322B25FF400D6B172 /* BenchmarkCell.swift in Sources */,
 				F041106F22A98D2C00D8E1B6 /* DIagramViewController.swift in Sources */,
 				F0CA58C022B26ADF00D6B172 /* Array+Extensions.swift in Sources */,
 				F0CA58AE22B25E6400D6B172 /* BenchmarkBehavior.swift in Sources */,
+				F0F1F90622C8F000009C5B86 /* SetViewController.swift in Sources */,
+				F0F1F90522C8F000009C5B86 /* DictionaryViewController.swift in Sources */,
 				F0CA58B622B2655900D6B172 /* AlgoProvider.swift in Sources */,
 				F0335D9622A55FC700077257 /* AppDelegate.swift in Sources */,
 				F0CA591822C2956400D6B172 /* JsonPlaceholderProvider.swift in Sources */,
 				F0CA58EA22BAB2E700D6B172 /* SessionSummaryViewController.swift in Sources */,
 				F0CA58E822BAB1AD00D6B172 /* UITableView+Extensions.swift in Sources */,
+				F0F1F8FE22C8E453009C5B86 /* SwiftSequencemanipulator.swift in Sources */,
+				F0F1F8F622C8B07C009C5B86 /* DictionaryManipulator.swift in Sources */,
+				F0F1F8FC22C8E3C9009C5B86 /* SuffixManipulator.swift in Sources */,
+				F0F1F8F322C8B07C009C5B86 /* SwiftArrayManipulator.swift in Sources */,
 				F041107B22A990DC00D8E1B6 /* Services.swift in Sources */,
 				F0CA591522C137A700D6B172 /* PieChartPiece.swift in Sources */,
+				F0F1F8F822C8B07C009C5B86 /* SetManipulator.swift in Sources */,
 				F0CA58BC22B26A6200D6B172 /* StagLayout.swift in Sources */,
 				F041108222B0F8AB00D8E1B6 /* FeedViewController.swift in Sources */,
 				F0F1F8DC22C892E9009C5B86 /* Algo.swift in Sources */,
+				F0F1F90422C8F000009C5B86 /* ArrayViewController.swift in Sources */,
 				F0CA58B922B2680F00D6B172 /* UIColor+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -18,6 +18,10 @@ class Services {
         return AlgoProvider()
     }()
     
+    static var feedProvider: FeedDataProvider = {
+        return FeedDataProvider()
+    }()
+    
     static var jsonProvider: JsonPlaceholderProvider = {
         return JsonPlaceholderProvider()
     }()
