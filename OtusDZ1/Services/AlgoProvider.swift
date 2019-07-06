@@ -8,7 +8,7 @@
 
 import UIKit
 
-typealias AlgoSuffixed = (suffix: SuffixSequence, algoName: String)
+typealias AlgoSuffixed = (suffix: String, algoName: String)
 
 struct AlgoProvider {
     
@@ -36,11 +36,16 @@ struct AlgoProvider {
     }
     
     func sortedSiffixes() -> [AlgoSuffixed] {
-        let result: [AlgoSuffixed] = sortings().map({ (algo) -> AlgoSuffixed in
-            let item: AlgoSuffixed = (algo.suffixed(), algo.name)
-            return item
-        })
-
+        var result: [AlgoSuffixed] = []
+        
+        for item in sortings() {
+            var iterator = item.suffixed().makeIterator()
+            while let next = iterator.next() {
+                let suffixed: AlgoSuffixed = (String(next).lowercased(), item.name)
+                result.append(suffixed)
+            }
+        }
+        
         return result.sorted(by: { $0.algoName < $1.algoName })
     }
     

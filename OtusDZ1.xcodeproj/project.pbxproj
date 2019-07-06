@@ -54,7 +54,7 @@
 		F0F1F8F822C8B07C009C5B86 /* SetManipulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F1F8F022C8B07C009C5B86 /* SetManipulator.swift */; };
 		F0F1F8F922C8B07C009C5B86 /* Profiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F1F8F122C8B07C009C5B86 /* Profiler.swift */; };
 		F0F1F8FC22C8E3C9009C5B86 /* SuffixManipulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F1F8FB22C8E3C9009C5B86 /* SuffixManipulator.swift */; };
-		F0F1F8FE22C8E453009C5B86 /* SwiftSequencemanipulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F1F8FD22C8E453009C5B86 /* SwiftSequencemanipulator.swift */; };
+		F0F1F8FE22C8E453009C5B86 /* SwiftSequenceManipulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F1F8FD22C8E453009C5B86 /* SwiftSequenceManipulator.swift */; };
 		F0F1F90422C8F000009C5B86 /* ArrayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F1F90022C8F000009C5B86 /* ArrayViewController.swift */; };
 		F0F1F90522C8F000009C5B86 /* DictionaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F1F90122C8F000009C5B86 /* DictionaryViewController.swift */; };
 		F0F1F90622C8F000009C5B86 /* SetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F1F90222C8F000009C5B86 /* SetViewController.swift */; };
@@ -115,7 +115,7 @@
 		F0F1F8F022C8B07C009C5B86 /* SetManipulator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetManipulator.swift; sourceTree = "<group>"; };
 		F0F1F8F122C8B07C009C5B86 /* Profiler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profiler.swift; sourceTree = "<group>"; };
 		F0F1F8FB22C8E3C9009C5B86 /* SuffixManipulator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixManipulator.swift; sourceTree = "<group>"; };
-		F0F1F8FD22C8E453009C5B86 /* SwiftSequencemanipulator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSequencemanipulator.swift; sourceTree = "<group>"; };
+		F0F1F8FD22C8E453009C5B86 /* SwiftSequenceManipulator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSequenceManipulator.swift; sourceTree = "<group>"; };
 		F0F1F90022C8F000009C5B86 /* ArrayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayViewController.swift; sourceTree = "<group>"; };
 		F0F1F90122C8F000009C5B86 /* DictionaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryViewController.swift; sourceTree = "<group>"; };
 		F0F1F90222C8F000009C5B86 /* SetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetViewController.swift; sourceTree = "<group>"; };
@@ -367,7 +367,7 @@
 			isa = PBXGroup;
 			children = (
 				F0F1F8FB22C8E3C9009C5B86 /* SuffixManipulator.swift */,
-				F0F1F8FD22C8E453009C5B86 /* SwiftSequencemanipulator.swift */,
+				F0F1F8FD22C8E453009C5B86 /* SwiftSequenceManipulator.swift */,
 			);
 			path = SuffixSequence;
 			sourceTree = "<group>";
@@ -497,7 +497,7 @@
 				F0CA591822C2956400D6B172 /* JsonPlaceholderProvider.swift in Sources */,
 				F0CA58EA22BAB2E700D6B172 /* SessionSummaryViewController.swift in Sources */,
 				F0CA58E822BAB1AD00D6B172 /* UITableView+Extensions.swift in Sources */,
-				F0F1F8FE22C8E453009C5B86 /* SwiftSequencemanipulator.swift in Sources */,
+				F0F1F8FE22C8E453009C5B86 /* SwiftSequenceManipulator.swift in Sources */,
 				F0F1F8F622C8B07C009C5B86 /* DictionaryManipulator.swift in Sources */,
 				F0F1F8FC22C8E3C9009C5B86 /* SuffixManipulator.swift in Sources */,
 				F0F1F8F322C8B07C009C5B86 /* SwiftArrayManipulator.swift in Sources */,

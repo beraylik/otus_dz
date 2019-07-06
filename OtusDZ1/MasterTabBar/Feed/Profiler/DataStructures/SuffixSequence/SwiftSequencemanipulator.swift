@@ -43,16 +43,10 @@ class SwiftSequenceManipulator: SequenceManipulator {
         let stringGenerator = StringGenerator()
         let time = Profiler.runClosureForTime {
             while foundInTotal < self.targetLookups {
-                let randString = stringGenerator.generateRandomString(3)
-                for algo in self.data {
-                    var iterator = algo.suffix.makeIterator()
-                    while let substring = iterator.next() {
-                        if substring == randString {
-                            foundInTotal += 1
-                            print("Found with: \(randString)")
-                            break
-                        }
-                    }
+                let randString = stringGenerator.generateRandomString(3).lowercased()
+                for algo in self.data where algo.suffix.hasSuffix(randString) {
+                    foundInTotal += 1
+                    print("Found with: \(randString)")
                 }
             }
             
