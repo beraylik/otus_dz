@@ -38,6 +38,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         print(#function)
     }
 
-
 }
 
+// Extension for open with URL handling
+extension AppDelegate {
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        if url.scheme == "OtusDzUrl" {
+            switch url.host {
+            case "LocalizeSharedVC":
+                let mainStoryboard : UIStoryboard = UIStoryboard(name: "LocalizeSharedExt", bundle: nil)
+                let localizeSharedVC: UIViewController = mainStoryboard.instantiateViewController(withIdentifier: "LocalizeSharedVC") as UIViewController
+                
+                let navigationController = UINavigationController(rootViewController: localizeSharedVC)
+                self.window = UIWindow(frame: UIScreen.main.bounds)
+                self.window?.rootViewController = navigationController
+                self.window?.makeKeyAndVisible()
+            default:
+                break
+            }
+        }
+        return true
+    }
+    
+}

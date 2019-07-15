@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ADP-vd-6QL">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Text localizing-->
+        <scene sceneID="yrb-pl-amC">
+            <objects>
+                <viewController storyboardIdentifier="LocalizeSharedVC" id="lTP-10-kLi" customClass="LocalizeSharedVC" customModule="OtusDZ1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2PV-rX-A07">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="CuT-DH-o7C">
+                                <rect key="frame" x="20" y="158" width="374" height="29"/>
+                                <segments>
+                                    <segment title="Russia"/>
+                                    <segment title="USA"/>
+                                    <segment title="France"/>
+                                    <segment title="Japan"/>
+                                    <segment title="China"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentValueChanged:" destination="lTP-10-kLi" eventType="valueChanged" id="hEn-3l-sh3"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick localizing country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFO-fO-sZh">
+                                <rect key="frame" x="121.5" y="112" width="171" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JVO-4T-ma1">
+                                <rect key="frame" x="20" y="210" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Df-Kb-B2B" firstAttribute="trailing" secondItem="JVO-4T-ma1" secondAttribute="trailing" constant="20" id="8LH-kD-97x"/>
+                            <constraint firstItem="eFO-fO-sZh" firstAttribute="top" secondItem="6Df-Kb-B2B" secondAttribute="top" constant="24" id="bpe-1p-hVp"/>
+                            <constraint firstItem="JVO-4T-ma1" firstAttribute="top" secondItem="CuT-DH-o7C" secondAttribute="bottom" constant="24" id="kMA-1Y-9YH"/>
+                            <constraint firstItem="CuT-DH-o7C" firstAttribute="leading" secondItem="6Df-Kb-B2B" secondAttribute="leading" constant="20" id="nfI-hS-Ljh"/>
+                            <constraint firstItem="eFO-fO-sZh" firstAttribute="centerX" secondItem="2PV-rX-A07" secondAttribute="centerX" id="nj6-Qa-yhC"/>
+                            <constraint firstItem="CuT-DH-o7C" firstAttribute="top" secondItem="eFO-fO-sZh" secondAttribute="bottom" constant="25" id="p43-CK-hmN"/>
+                            <constraint firstItem="JVO-4T-ma1" firstAttribute="leading" secondItem="6Df-Kb-B2B" secondAttribute="leading" constant="20" id="y9C-tN-qWx"/>
+                            <constraint firstItem="6Df-Kb-B2B" firstAttribute="trailing" secondItem="CuT-DH-o7C" secondAttribute="trailing" constant="20" id="zT0-xu-u69"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Df-Kb-B2B"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Text localizing" id="Yaf-di-VJD">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="qYU-WG-iK1">
+                            <connections>
+                                <action selector="donePressed:" destination="lTP-10-kLi" id="j7Q-vM-ORD"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mainTextLabel" destination="JVO-4T-ma1" id="QWW-sY-CQQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J8B-5V-yTX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="840.57971014492762" y="75"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="CUt-u6-DVG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ADP-vd-6QL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="auu-3M-qT9">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="lTP-10-kLi" kind="relationship" relationship="rootViewController" id="2Bp-Xj-8Cq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ioy-Tl-D6S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-69.565217391304358" y="75"/>
+        </scene>
+    </scenes>
+</document>
