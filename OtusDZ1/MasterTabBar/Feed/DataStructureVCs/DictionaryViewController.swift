@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import TestProfiler
 
 private enum DictionaryVCRow: Int {
   case creation = 0,

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import TestProfiler
 
 private enum SetVCRow: Int {
   case creation = 0,

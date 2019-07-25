@@ -7,24 +7,25 @@
 //
 
 import Foundation
+import TestProfiler
 
-class SwiftSequenceManipulator: SequenceManipulator {
+public class SwiftSequenceManipulator: SequenceManipulator {
     
     fileprivate var data = [AlgoSuffixed]()
     fileprivate var targetLookups: Int = 0
     
-    func setCustomTimes(_ count: Int) {
+    public func setCustomTimes(_ count: Int) {
         targetLookups = count
         data = Services.algoProvider.sortedSiffixes()
     }
     
-    func arrayHasObjects() -> Bool {
+    public func arrayHasObjects() -> Bool {
         return !data.isEmpty
     }
     
     //MARK: Look up Tests
     
-    func lookup10times() -> TimeInterval {
+    public func lookup10times() -> TimeInterval {
         let stringGenerator = StringGenerator()
         let time = Profiler.runClosureForTime {
             for _ in 0..<10 {
@@ -38,7 +39,7 @@ class SwiftSequenceManipulator: SequenceManipulator {
         return time
     }
     
-    func lookupCustomTimes() -> TimeInterval {
+    public func lookupCustomTimes() -> TimeInterval {
         var foundInTotal = 0
         let stringGenerator = StringGenerator()
         let time = Profiler.runClosureForTime {

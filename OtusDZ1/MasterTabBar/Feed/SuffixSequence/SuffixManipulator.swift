@@ -11,7 +11,7 @@ import Foundation
 /**
  * A protocol which will allow the easy test out SuffixSequence
  */
-protocol SequenceManipulator {
+public protocol SequenceManipulator {
     func arrayHasObjects() -> Bool
     func setCustomTimes(_ count: Int)
     func lookup10times() -> TimeInterval

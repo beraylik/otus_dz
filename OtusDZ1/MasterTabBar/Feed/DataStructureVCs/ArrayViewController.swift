@@ -19,6 +19,7 @@ private enum ArrayVCRow: Int {
 }
 
 import UIKit
+import TestProfiler
 
 class ArrayViewController: DataStructuresViewController {
 
