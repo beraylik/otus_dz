@@ -12,7 +12,7 @@ final class BenchmarkViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    private var dataSource: [Algo] = Services.algoProvider.sortings()
+    private let viewModel = BenchmarkViewModel()
     
     private let defaultLayouts: [UICollectionViewLayout] = [
         StagLayout(widthHeightRatios: [(1.0, 1.0), (0.5, 0.5), (0.5, 1.5), (0.5, 1.0)], itemSpacing: 4),
@@ -51,7 +51,7 @@ final class BenchmarkViewController: UIViewController {
 extension BenchmarkViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return dataSource.count
+        return viewModel.dataSource.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -59,8 +59,8 @@ extension BenchmarkViewController: UICollectionViewDataSource {
             fatalError("Collection view Cell not found")
         }
         
-        let algoItem = dataSource[indexPath.row]
-        cell.update(algo: algoItem)
+        let cellVM = viewModel.dataSource[indexPath.row]
+        cell.set(viewModel: cellVM)
         
         return cell
     }
@@ -73,10 +73,7 @@ extension BenchmarkViewController: UICollectionViewDataSource {
 extension BenchmarkViewController: UICollectionViewDelegate {
  
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        guard let cell = collectionView.cellForItem(at: indexPath) as? BenchmarkCell else {
-            fatalError("Collection view Cell not found")
-        }
-        cell.toggleTimer()
+        viewModel.dataSource[indexPath.row].toggleTimer()
     }
     
 }

@@ -46,6 +46,10 @@
 		F0D3247422E8F02800EF48A0 /* SwiftSequenceManipulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D3247222E8F02800EF48A0 /* SwiftSequenceManipulator.swift */; };
 		F0D3247522E8F02800EF48A0 /* SuffixManipulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D3247322E8F02800EF48A0 /* SuffixManipulator.swift */; };
 		F0D324B922EA11A400EF48A0 /* Dependencies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0D324B822EA11A400EF48A0 /* Dependencies.framework */; };
+		F0EEAA5B22ED88D400675EE3 /* BenchmarkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EEAA5A22ED88D400675EE3 /* BenchmarkViewModel.swift */; };
+		F0EEAA5D22ED8B6A00675EE3 /* BenchmarkCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EEAA5C22ED8B6A00675EE3 /* BenchmarkCellViewModel.swift */; };
+		F0EEAA6222ED95C200675EE3 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EEAA6122ED95C200675EE3 /* FeedViewModel.swift */; };
+		F0EEAA6422ED95CE00675EE3 /* FeedCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EEAA6322ED95CE00675EE3 /* FeedCellViewModel.swift */; };
 		F0F1F8DC22C892E9009C5B86 /* Algo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F1F8DB22C892E9009C5B86 /* Algo.swift */; };
 		F0F1F8DE22C89610009C5B86 /* NSNotificationName+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F1F8DD22C89610009C5B86 /* NSNotificationName+Extensions.swift */; };
 		F0F1F8E022C8A976009C5B86 /* SuffixSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F1F8DF22C8A976009C5B86 /* SuffixSequence.swift */; };
@@ -132,6 +136,10 @@
 		F0D3247222E8F02800EF48A0 /* SwiftSequenceManipulator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftSequenceManipulator.swift; sourceTree = "<group>"; };
 		F0D3247322E8F02800EF48A0 /* SuffixManipulator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuffixManipulator.swift; sourceTree = "<group>"; };
 		F0D324B822EA11A400EF48A0 /* Dependencies.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Dependencies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0EEAA5A22ED88D400675EE3 /* BenchmarkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenchmarkViewModel.swift; sourceTree = "<group>"; };
+		F0EEAA5C22ED8B6A00675EE3 /* BenchmarkCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenchmarkCellViewModel.swift; sourceTree = "<group>"; };
+		F0EEAA6122ED95C200675EE3 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		F0EEAA6322ED95CE00675EE3 /* FeedCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCellViewModel.swift; sourceTree = "<group>"; };
 		F0F1F8DB22C892E9009C5B86 /* Algo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Algo.swift; sourceTree = "<group>"; };
 		F0F1F8DD22C89610009C5B86 /* NSNotificationName+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSNotificationName+Extensions.swift"; sourceTree = "<group>"; };
 		F0F1F8DF22C8A976009C5B86 /* SuffixSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixSequence.swift; sourceTree = "<group>"; };
@@ -195,7 +203,6 @@
 		F0335D9422A55FC700077257 /* OtusDZ1 */ = {
 			isa = PBXGroup;
 			children = (
-				F0D324AB22EA0DAE00EF48A0 /* Dependencies */,
 				F0335D9522A55FC700077257 /* AppDelegate.swift */,
 				F041107522A98EED00D8E1B6 /* Services */,
 				F0F1F8DA22C892DD009C5B86 /* Models */,
@@ -205,6 +212,7 @@
 				F0F1F95722D0F8CF009C5B86 /* LocalizeShared */,
 				F041107022A98D4000D8E1B6 /* Behavior */,
 				F0CA58B722B267FA00D6B172 /* Extensions */,
+				F0D324AB22EA0DAE00EF48A0 /* Dependencies */,
 				F0335D9922A55FC700077257 /* Main.storyboard */,
 				F0335D9E22A55FCA00077257 /* LaunchScreen.storyboard */,
 				F0335D9C22A55FCA00077257 /* Assets.xcassets */,
@@ -217,10 +225,10 @@
 		F041106A22A984EE00D8E1B6 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				F041106E22A98D2C00D8E1B6 /* DIagramViewController.swift */,
-				F041106B22A9850900D8E1B6 /* Profile.storyboard */,
-				F041107622A98FC500D8E1B6 /* Diagram.xcassets */,
 				F0335DAA22A56C3700077257 /* ChangeImageBtn.swift */,
+				F041106B22A9850900D8E1B6 /* Profile.storyboard */,
+				F041106E22A98D2C00D8E1B6 /* DIagramViewController.swift */,
+				F041107622A98FC500D8E1B6 /* Diagram.xcassets */,
 				F041107E22B0EDDF00D8E1B6 /* ProfileViewController.swift */,
 			);
 			path = Profile;
@@ -249,12 +257,9 @@
 		F041108022B0F89800D8E1B6 /* Feed */ = {
 			isa = PBXGroup;
 			children = (
-				F0CA58E422BAAF4500D6B172 /* Feed.storyboard */,
-				F0F1F8FF22C8F000009C5B86 /* DataStructureVCs */,
-				F041108122B0F8AB00D8E1B6 /* FeedViewController.swift */,
-				F041108322B0FB8000D8E1B6 /* FeedThreeViewController.swift */,
-				F0CA58E922BAB2E700D6B172 /* SessionSummaryViewController.swift */,
-				F0D3247122E8F02800EF48A0 /* SuffixSequence */,
+				F0EEAA6022ED959400675EE3 /* Model */,
+				F0EEAA5F22ED958F00675EE3 /* View */,
+				F0EEAA5E22ED958600675EE3 /* ViewModel */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -262,11 +267,9 @@
 		F0CA58AC22B259B000D6B172 /* Benchmark */ = {
 			isa = PBXGroup;
 			children = (
-				F0CA58A922B259A300D6B172 /* Benchmark.storyboard */,
-				F0CA58AD22B25E6400D6B172 /* BenchmarkBehavior.swift */,
-				F041107C22B0EC8B00D8E1B6 /* BenchmarkViewController.swift */,
-				F0F1F8D922C890D2009C5B86 /* Cell */,
-				F0CA58BA22B269F700D6B172 /* Layouts */,
+				F0EEAA5722ED888D00675EE3 /* Model */,
+				F0EEAA5822ED889300675EE3 /* View */,
+				F0EEAA5922ED889A00675EE3 /* ViewModel */,
 			);
 			path = Benchmark;
 			sourceTree = "<group>";
@@ -343,6 +346,65 @@
 			path = Dependencies;
 			sourceTree = "<group>";
 		};
+		F0EEAA5722ED888D00675EE3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F0F1F8DB22C892E9009C5B86 /* Algo.swift */,
+				F0CA58AD22B25E6400D6B172 /* BenchmarkBehavior.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F0EEAA5822ED889300675EE3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F0CA58A922B259A300D6B172 /* Benchmark.storyboard */,
+				F041107C22B0EC8B00D8E1B6 /* BenchmarkViewController.swift */,
+				F0F1F8D922C890D2009C5B86 /* Cell */,
+				F0CA58BA22B269F700D6B172 /* Layouts */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F0EEAA5922ED889A00675EE3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F0EEAA5A22ED88D400675EE3 /* BenchmarkViewModel.swift */,
+				F0EEAA5C22ED8B6A00675EE3 /* BenchmarkCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F0EEAA5E22ED958600675EE3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F0EEAA6122ED95C200675EE3 /* FeedViewModel.swift */,
+				F0EEAA6322ED95CE00675EE3 /* FeedCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F0EEAA5F22ED958F00675EE3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F0CA58E422BAAF4500D6B172 /* Feed.storyboard */,
+				F041108122B0F8AB00D8E1B6 /* FeedViewController.swift */,
+				F041108322B0FB8000D8E1B6 /* FeedThreeViewController.swift */,
+				F0CA58E922BAB2E700D6B172 /* SessionSummaryViewController.swift */,
+				F0F1F8FF22C8F000009C5B86 /* DataStructureVCs */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F0EEAA6022ED959400675EE3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F0F1F90A22C8F041009C5B86 /* FeedData.swift */,
+				F0D3247122E8F02800EF48A0 /* SuffixSequence */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F0F1F8D722C88D49009C5B86 /* Component */ = {
 			isa = PBXGroup;
 			children = (
@@ -375,8 +437,6 @@
 		F0F1F8DA22C892DD009C5B86 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				F0F1F8DB22C892E9009C5B86 /* Algo.swift */,
-				F0F1F90A22C8F041009C5B86 /* FeedData.swift */,
 				F0F1F8DF22C8A976009C5B86 /* SuffixSequence.swift */,
 			);
 			path = Models;
@@ -553,6 +613,7 @@
 				F0F1F90722C8F000009C5B86 /* DataStructuresViewController.swift in Sources */,
 				F041108422B0FB8000D8E1B6 /* FeedThreeViewController.swift in Sources */,
 				F0D3247422E8F02800EF48A0 /* SwiftSequenceManipulator.swift in Sources */,
+				F0EEAA6222ED95C200675EE3 /* FeedViewModel.swift in Sources */,
 				F0F1F90B22C8F041009C5B86 /* FeedData.swift in Sources */,
 				F0CA58BE22B26AC700D6B172 /* StagLayoutFrameHolder.swift in Sources */,
 				F0F1F90F22C8F159009C5B86 /* SuffixSequenceViewController.swift in Sources */,
@@ -561,6 +622,7 @@
 				F041106F22A98D2C00D8E1B6 /* DIagramViewController.swift in Sources */,
 				F0F1F95B22D0F92F009C5B86 /* LocalizeSharedBehaviour.swift in Sources */,
 				F0CA58C022B26ADF00D6B172 /* Array+Extensions.swift in Sources */,
+				F0EEAA6422ED95CE00675EE3 /* FeedCellViewModel.swift in Sources */,
 				F0CA58AE22B25E6400D6B172 /* BenchmarkBehavior.swift in Sources */,
 				F0F1F95922D0F8FF009C5B86 /* LocalizeSharedVC.swift in Sources */,
 				F0F1F90622C8F000009C5B86 /* SetViewController.swift in Sources */,
@@ -573,6 +635,8 @@
 				F0CA58E822BAB1AD00D6B172 /* UITableView+Extensions.swift in Sources */,
 				F041107B22A990DC00D8E1B6 /* Services.swift in Sources */,
 				F0CA591522C137A700D6B172 /* PieChartPiece.swift in Sources */,
+				F0EEAA5D22ED8B6A00675EE3 /* BenchmarkCellViewModel.swift in Sources */,
+				F0EEAA5B22ED88D400675EE3 /* BenchmarkViewModel.swift in Sources */,
 				F0CA58BC22B26A6200D6B172 /* StagLayout.swift in Sources */,
 				F041108222B0F8AB00D8E1B6 /* FeedViewController.swift in Sources */,
 				F0F1F8DC22C892E9009C5B86 /* Algo.swift in Sources */,

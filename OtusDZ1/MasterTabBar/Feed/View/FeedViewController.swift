@@ -11,8 +11,8 @@ import UIKit
 class FeedViewController: UIViewController {
 
     @IBOutlet var tableView: UITableView!
-    
-    private var dataSource: [FeedData] = Services.feedProvider.feedMockData()
+
+    private var viewModel: FeedViewModel = FeedViewModel()
     
     private var jsonPlaceholerProvider = Services.jsonProvider
     
@@ -44,13 +44,13 @@ class FeedViewController: UIViewController {
 extension FeedViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dataSource.count
+        return viewModel.dataSource.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: UITableViewCell.cellId, for: indexPath)
         
-        cell.textLabel?.text = dataSource[indexPath.row].name
+        cell.textLabel?.text = viewModel.dataSource[indexPath.row].name
         
         return cell
     }
