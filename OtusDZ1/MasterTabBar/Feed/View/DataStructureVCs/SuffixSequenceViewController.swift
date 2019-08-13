@@ -17,7 +17,16 @@ class SuffixSequenceViewController: DataStructuresViewController {
     
     //MARK: - Variables
     
-    let sequenceManipulator: SequenceManipulator = SwiftSequenceManipulator()
+    let sequenceManipulator: SequenceManipulator = {
+        if let service: AlgoProvider = ServiceLocator.shared.getService() {
+            return SwiftSequenceManipulator(service: service)
+        }else {
+            let algo = AlgoProvider()
+            return SwiftSequenceManipulator(service: algo)
+        }
+        
+    
+    }()
     
     var lookupRandom10Time: TimeInterval = 0
     var lookupCustomTimesTime: TimeInterval = 0

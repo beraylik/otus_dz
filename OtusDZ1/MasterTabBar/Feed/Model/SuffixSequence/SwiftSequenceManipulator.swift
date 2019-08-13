@@ -13,10 +13,15 @@ public class SwiftSequenceManipulator: SequenceManipulator {
     
     fileprivate var data = [AlgoSuffixed]()
     fileprivate var targetLookups: Int = 0
+    fileprivate let algoProvider: AlgoProvider
+    
+    init(service: AlgoProvider) {
+        self.algoProvider = service
+    }
     
     public func setCustomTimes(_ count: Int) {
         targetLookups = count
-        data = Services.algoProvider.sortedSiffixes()
+        data = algoProvider.sortedSiffixes()
     }
     
     public func arrayHasObjects() -> Bool {

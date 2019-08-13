@@ -14,7 +14,13 @@ class FeedViewController: UIViewController {
 
     private var viewModel: FeedViewModel = FeedViewModel()
     
-    private var jsonPlaceholerProvider = Services.jsonProvider
+    private let jsonPlaceholerProvider: JsonPlaceholderProvider = {
+        if let service: JsonPlaceholderProvider = ServiceLocator.shared.getService() {
+            return service
+        } else {
+            return JsonPlaceholderProvider()
+        }
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()

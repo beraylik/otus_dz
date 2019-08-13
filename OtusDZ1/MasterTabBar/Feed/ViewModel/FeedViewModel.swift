@@ -12,7 +12,11 @@ class FeedViewModel {
     var dataSource: [FeedCellViewModel]
     
     init() {
-        dataSource = Services.feedProvider.feedMockData().map({ (feedData) -> FeedCellViewModel in
+        guard let feedProvider: FeedDataProvider = ServiceLocator.shared.getService() else {
+            dataSource = []
+            return
+        }
+        dataSource = feedProvider.feedMockData().map({ (feedData) -> FeedCellViewModel in
             return FeedCellViewModel(feedData: feedData)
         })
     }

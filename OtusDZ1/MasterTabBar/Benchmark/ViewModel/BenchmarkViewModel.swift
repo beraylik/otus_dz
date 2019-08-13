@@ -13,7 +13,11 @@ class BenchmarkViewModel {
     var dataSource: [BenchmarkCellViewModel] = []
     
     init() {
-        dataSource = Services.algoProvider.sortings().map({ (algo) -> BenchmarkCellViewModel in
+        guard let algoProvider: AlgoProvider = ServiceLocator.shared.getService() else {
+            dataSource = []
+            return
+        }
+        dataSource = algoProvider.sortings().map({ (algo) -> BenchmarkCellViewModel in
             BenchmarkCellViewModel(algo: algo)
         })
     }

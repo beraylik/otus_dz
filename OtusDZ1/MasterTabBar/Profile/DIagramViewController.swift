@@ -36,8 +36,10 @@ final class InfinityScrollBehavior: ViewControllerLifecycleBehavior {
     // MARK: - API
     
     func addImageViews() {
+        guard let imageProvider: DiagramImageProvider = ServiceLocator.shared.getService() else { return }
+        
         (0..<3).forEach { (i) in
-            if let image = Services.diagramImageProvider.random() {
+            if let image = imageProvider.random() {
                 delegate.images.append(image)
                 delegate.imageViews[i].image = image
                 delegate.scrollView.addSubview(delegate.imageViews[i])
@@ -83,6 +85,23 @@ final class DIagramViewController: UIViewController, InfinityScrollable {
     var dragging: Bool = false
     var scrollViewSize: CGRect = .zero
     
+    private let imageProvider: DiagramImageProvider
+    
+    // MARK: - Initialization
+    
+    init(service: DiagramImageProvider) {
+        imageProvider = service
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        guard let imageProvider: DiagramImageProvider = ServiceLocator.shared.getService() else {
+            return nil
+        }
+        self.imageProvider = imageProvider
+        super.init(coder: aDecoder)
+    }
+    
     // MARK: - Life cycle
     
     override func viewDidLoad() {
@@ -127,7 +146,7 @@ extension DIagramViewController: UIScrollViewDelegate {
         
         // Right
         if offsetX > (scrollView.frame.size.width*1.5) {
-            if let newImage = Services.diagramImageProvider.random() {
+            if let newImage = imageProvider.random() {
                 images.remove(at: 0)
                 images.append(newImage)
                 layoutImages()
@@ -137,7 +156,7 @@ extension DIagramViewController: UIScrollViewDelegate {
         
         // Left
         if offsetX < (scrollView.frame.size.width*0.5) {
-            if let newImage = Services.diagramImageProvider.random() {
+            if let newImage = imageProvider.random() {
                 images.removeLast()
                 images.insert(newImage, at: 0)
                 layoutImages()
