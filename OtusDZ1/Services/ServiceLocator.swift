@@ -16,7 +16,7 @@ protocol ServiceLocation {
 
 // MARK: - ServiceLocator implementation
 
-class ServiceLocator: ServiceLocation {
+final class ServiceLocator: ServiceLocation {
     
     // MARK: - Properties
     
@@ -25,7 +25,9 @@ class ServiceLocator: ServiceLocation {
     // MARK: - Singletone instanse
     
     public static let shared = ServiceLocator()
-    private init() {}
+    private init() {
+        setupServices()
+    }
     
     // MARK: - Core behavior
     
@@ -45,10 +47,12 @@ class ServiceLocator: ServiceLocation {
         return some is Any.Type ? "\(some.self)" : "\(type(of: some))"
     }
     
-    static func setupServices() {
-        ServiceLocator.shared.addService(DiagramImageProvider())
-        ServiceLocator.shared.addService(AlgoProvider())
-        ServiceLocator.shared.addService(FeedDataProvider())
-        ServiceLocator.shared.addService(JsonPlaceholderProvider())
+    // MARK: - Initializing services
+    
+    private func setupServices() {
+        addService(DiagramImageProvider())
+        addService(AlgoProvider())
+        addService(FeedDataProvider())
+        addService(JsonPlaceholderProvider())
     }
 }

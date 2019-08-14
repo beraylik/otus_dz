@@ -8,14 +8,14 @@
 
 import Foundation
 
-class FeedViewModel {
+final class FeedViewModel {
+    
     var dataSource: [FeedCellViewModel]
     
-    init() {
-        guard let feedProvider: FeedDataProvider = ServiceLocator.shared.getService() else {
-            dataSource = []
-            return
-        }
+    private let feedProvider: FeedDataProvider
+    
+    init(feedProvider: FeedDataProvider) {
+        self.feedProvider = feedProvider
         dataSource = feedProvider.feedMockData().map({ (feedData) -> FeedCellViewModel in
             return FeedCellViewModel(feedData: feedData)
         })

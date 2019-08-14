@@ -12,7 +12,7 @@ class FeedViewController: UIViewController {
 
     @IBOutlet var tableView: UITableView!
 
-    private var viewModel: FeedViewModel = FeedViewModel()
+    private var viewModel: FeedViewModel
     
     private let jsonPlaceholerProvider: JsonPlaceholderProvider = {
         if let service: JsonPlaceholderProvider = ServiceLocator.shared.getService() {
@@ -21,6 +21,18 @@ class FeedViewController: UIViewController {
             return JsonPlaceholderProvider()
         }
     }()
+    
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        let dataProvider: FeedDataProvider? = ServiceLocator.shared.getService()
+        self.viewModel = FeedViewModel(feedProvider: dataProvider!)
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        let dataProvider: FeedDataProvider? = ServiceLocator.shared.getService()
+        self.viewModel = FeedViewModel(feedProvider: dataProvider!)
+        super.init(coder: aDecoder)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

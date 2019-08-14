@@ -12,7 +12,7 @@ final class BenchmarkViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    private let viewModel = BenchmarkViewModel()
+    private let viewModel: BenchmarkViewModel
     
     private let defaultLayouts: [UICollectionViewLayout] = [
         StagLayout(widthHeightRatios: [(1.0, 1.0), (0.5, 0.5), (0.5, 1.5), (0.5, 1.0)], itemSpacing: 4),
@@ -20,6 +20,16 @@ final class BenchmarkViewController: UIViewController {
         StagLayout(widthHeightRatios: [(0.5, 0.5)], itemSpacing: 4),
         StagLayout(widthHeightRatios: [(0.5, 0.5), (0.5, 1.5), (0.5, 1.0)], itemSpacing: 4)
     ]
+    
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        self.viewModel = BenchmarkViewModel()
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        self.viewModel = BenchmarkViewModel()
+        super.init(coder: aDecoder)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

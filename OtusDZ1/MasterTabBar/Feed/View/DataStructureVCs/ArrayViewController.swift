@@ -36,9 +36,7 @@ class ArrayViewController: DataStructuresViewController {
   var removeAtEndTime: TimeInterval = 0
   var lookupByIndexTime: TimeInterval = 0
   var lookupByObjectTime: TimeInterval = 0
-
-  //MARK: - Methods
-
+    
   //MARK: View lifecycle
 
   override func viewDidLoad() {

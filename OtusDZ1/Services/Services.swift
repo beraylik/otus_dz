@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Services_old {
+class Services {
     
     static var diagramImageProvider: DiagramImageProvider = {
         return DiagramImageProvider()
