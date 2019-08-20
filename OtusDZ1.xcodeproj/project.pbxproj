@@ -47,6 +47,8 @@
 		F0D3247522E8F02800EF48A0 /* SuffixManipulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D3247322E8F02800EF48A0 /* SuffixManipulator.swift */; };
 		F0D324B922EA11A400EF48A0 /* Dependencies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0D324B822EA11A400EF48A0 /* Dependencies.framework */; };
 		F0E51BD02301F7C800D4E777 /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E51BCF2301F7C800D4E777 /* ServiceLocator.swift */; };
+		F0E51BD723049A7D00D4E777 /* JobQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E51BD623049A7C00D4E777 /* JobQueue.swift */; };
+		F0E51BD923049A9600D4E777 /* JobScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E51BD823049A9600D4E777 /* JobScheduler.swift */; };
 		F0EEAA5B22ED88D400675EE3 /* BenchmarkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EEAA5A22ED88D400675EE3 /* BenchmarkViewModel.swift */; };
 		F0EEAA5D22ED8B6A00675EE3 /* BenchmarkCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EEAA5C22ED8B6A00675EE3 /* BenchmarkCellViewModel.swift */; };
 		F0EEAA6222ED95C200675EE3 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EEAA6122ED95C200675EE3 /* FeedViewModel.swift */; };
@@ -138,6 +140,8 @@
 		F0D3247322E8F02800EF48A0 /* SuffixManipulator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuffixManipulator.swift; sourceTree = "<group>"; };
 		F0D324B822EA11A400EF48A0 /* Dependencies.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Dependencies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0E51BCF2301F7C800D4E777 /* ServiceLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
+		F0E51BD623049A7C00D4E777 /* JobQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobQueue.swift; sourceTree = "<group>"; };
+		F0E51BD823049A9600D4E777 /* JobScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = JobScheduler.swift; path = /Users/genrihberajlik/Development/XcodeProjects/OTUS/OtusDZ1/OtusDZ1/GCD/JobScheduler.swift; sourceTree = "<absolute>"; };
 		F0EEAA5A22ED88D400675EE3 /* BenchmarkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenchmarkViewModel.swift; sourceTree = "<group>"; };
 		F0EEAA5C22ED8B6A00675EE3 /* BenchmarkCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenchmarkCellViewModel.swift; sourceTree = "<group>"; };
 		F0EEAA6122ED95C200675EE3 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
@@ -206,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				F0335D9522A55FC700077257 /* AppDelegate.swift */,
+				F0E51BD523049A5F00D4E777 /* GCD */,
 				F041107522A98EED00D8E1B6 /* Services */,
 				F0F1F8DA22C892DD009C5B86 /* Models */,
 				F0CA591122C1328E00D6B172 /* CustomViews */,
@@ -349,6 +354,15 @@
 			path = Dependencies;
 			sourceTree = "<group>";
 		};
+		F0E51BD523049A5F00D4E777 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				F0E51BD623049A7C00D4E777 /* JobQueue.swift */,
+				F0E51BD823049A9600D4E777 /* JobScheduler.swift */,
+			);
+			path = GCD;
+			sourceTree = "<group>";
+		};
 		F0EEAA5722ED888D00675EE3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -448,12 +462,12 @@
 		F0F1F8FF22C8F000009C5B86 /* DataStructureVCs */ = {
 			isa = PBXGroup;
 			children = (
+				F0F1F90322C8F000009C5B86 /* DataStructuresViewController.swift */,
 				F0F1F90C22C8F119009C5B86 /* DataStructures.storyboard */,
 				F0F1F90022C8F000009C5B86 /* ArrayViewController.swift */,
 				F0F1F90122C8F000009C5B86 /* DictionaryViewController.swift */,
 				F0F1F90222C8F000009C5B86 /* SetViewController.swift */,
 				F0F1F90E22C8F159009C5B86 /* SuffixSequenceViewController.swift */,
-				F0F1F90322C8F000009C5B86 /* DataStructuresViewController.swift */,
 			);
 			path = DataStructureVCs;
 			sourceTree = "<group>";
@@ -629,6 +643,7 @@
 				F0CA58AE22B25E6400D6B172 /* BenchmarkBehavior.swift in Sources */,
 				F0F1F95922D0F8FF009C5B86 /* LocalizeSharedVC.swift in Sources */,
 				F0F1F90622C8F000009C5B86 /* SetViewController.swift in Sources */,
+				F0E51BD923049A9600D4E777 /* JobScheduler.swift in Sources */,
 				F0F1F90522C8F000009C5B86 /* DictionaryViewController.swift in Sources */,
 				F0CA58B622B2655900D6B172 /* AlgoProvider.swift in Sources */,
 				F0335D9622A55FC700077257 /* AppDelegate.swift in Sources */,
@@ -637,6 +652,7 @@
 				F0D3247522E8F02800EF48A0 /* SuffixManipulator.swift in Sources */,
 				F0CA58E822BAB1AD00D6B172 /* UITableView+Extensions.swift in Sources */,
 				F041107B22A990DC00D8E1B6 /* Services.swift in Sources */,
+				F0E51BD723049A7D00D4E777 /* JobQueue.swift in Sources */,
 				F0CA591522C137A700D6B172 /* PieChartPiece.swift in Sources */,
 				F0E51BD02301F7C800D4E777 /* ServiceLocator.swift in Sources */,
 				F0EEAA5D22ED8B6A00675EE3 /* BenchmarkCellViewModel.swift in Sources */,
