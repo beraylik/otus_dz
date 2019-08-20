@@ -1,0 +1,21 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Dependencies"
+provides-nominal:
+- "12DependenciesAAV"
+provides-member:
+- ["12DependenciesAAV", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "Dependencies"
+- "StringLiteralType"
+depends-member:
+- ["12DependenciesAAV", "init"]
+- ["12DependenciesAAV", "text"]
+depends-nominal:
+- "12DependenciesAAV"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+interface-hash: "f0595bf4db3c636f7af5ca87bf5592c0"
