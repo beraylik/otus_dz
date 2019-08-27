@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import TestProfiler
 
 class FeedViewController: UIViewController {
 
@@ -37,7 +38,13 @@ class FeedViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: UITableViewCell.cellId)
+        setupNavBar()
+        
+        viewModel.testsCompletion = { [weak self] in
+            DispatchQueue.main.async {
+                self?.tableView.reloadData()
+            }
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -55,6 +62,14 @@ class FeedViewController: UIViewController {
         }
     }
 
+    private func setupNavBar() {
+        let testButton = UIBarButtonItem(title: "Run tests", style: .plain, target: self, action: #selector(runDefaultTests))
+        navigationItem.rightBarButtonItem = testButton
+    }
+    
+    @objc private func runDefaultTests() {
+        viewModel.runTests()
+    }
 }
 
 // MARK: - TableView DataSource
@@ -66,10 +81,9 @@ extension FeedViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: UITableViewCell.cellId, for: indexPath)
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellId", for: indexPath)
         cell.textLabel?.text = viewModel.dataSource[indexPath.row].name
-        
+        cell.detailTextLabel?.text = viewModel.dataSource[indexPath.row].subtitle
         return cell
     }
     
