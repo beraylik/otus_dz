@@ -1,1 +1,0 @@
-{"object": {"dependencies": [{"basedOn": null, "packageRef": {"identity": "testprofiler", "isLocal": false, "name": "TestProfiler", "path": "https://github.com/beraylik/TestProfiler.git"}, "state": {"checkoutState": {"branch": null, "revision": "75f1684a9194c3e99d3a3cb6801ba1c2e5797f62", "version": "1.0.4"}, "name": "checkout"}, "subpath": "TestProfiler"}]}, "version": 2}
