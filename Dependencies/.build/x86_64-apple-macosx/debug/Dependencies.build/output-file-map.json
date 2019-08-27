@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/genrihberajlik/Development/XcodeProjects/OTUS/OtusDZ1/Dependencies/.build/x86_64-apple-macosx/debug/Dependencies.build/master.swiftdeps"
+  },
+  "/Users/genrihberajlik/Development/XcodeProjects/OTUS/OtusDZ1/Dependencies/Sources/Dependencies/Dependencies.swift": {
+    "dependencies": "/Users/genrihberajlik/Development/XcodeProjects/OTUS/OtusDZ1/Dependencies/.build/x86_64-apple-macosx/debug/Dependencies.build/Dependencies.d",
+    "object": "/Users/genrihberajlik/Development/XcodeProjects/OTUS/OtusDZ1/Dependencies/.build/x86_64-apple-macosx/debug/Dependencies.build/Dependencies.swift.o",
+    "swiftmodule": "/Users/genrihberajlik/Development/XcodeProjects/OTUS/OtusDZ1/Dependencies/.build/x86_64-apple-macosx/debug/Dependencies.build/Dependencies~partial.swiftmodule",
+    "swift-dependencies": "/Users/genrihberajlik/Development/XcodeProjects/OTUS/OtusDZ1/Dependencies/.build/x86_64-apple-macosx/debug/Dependencies.build/Dependencies.swiftdeps"
+  }
+}

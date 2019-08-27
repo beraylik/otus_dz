@@ -1,0 +1,53 @@
+{
+  "": {
+    "swift-dependencies": "/Users/genrihberajlik/Development/XcodeProjects/OTUS/OtusDZ1/Dependencies/.build/x86_64-apple-macosx/debug/TestProfiler.build/master.swiftdeps"
+  },
+  "/Users/genrihberajlik/Development/XcodeProjects/OTUS/OtusDZ1/Dependencies/.build/checkouts/TestProfiler/Sources/TestProfiler/DataStructures/Array/ArrayManipulator.swift": {
+    "dependencies": "/Users/genrihberajlik/Development/XcodeProjects/OTUS/OtusDZ1/Dependencies/.build/x86_64-apple-macosx/debug/TestProfiler.build/DataStructures/Array/ArrayManipulator.d",
+    "object": "/Users/genrihberajlik/Development/XcodeProjects/OTUS/OtusDZ1/Dependencies/.build/x86_64-apple-macosx/debug/TestProfiler.build/DataStructures/Array/ArrayManipulator.swift.o",
+    "swiftmodule": "/Users/genrihberajlik/Development/XcodeProjects/OTUS/OtusDZ1/Dependencies/.build/x86_64-apple-macosx/debug/TestProfiler.build/DataStructures/Array/ArrayManipulator~partial.swiftmodule",
+    "swift-dependencies": "/Users/genrihberajlik/Development/XcodeProjects/OTUS/OtusDZ1/Dependencies/.build/x86_64-apple-macosx/debug/TestProfiler.build/DataStructures/Array/ArrayManipulator.swiftdeps"
+  },
+  "/Users/genrihberajlik/Development/XcodeProjects/OTUS/OtusDZ1/Dependencies/.build/checkouts/TestProfiler/Sources/TestProfiler/DataStructures/Array/SwiftArrayManipulator.swift": {
+    "dependencies": "/Users/genrihberajlik/Development/XcodeProjects/OTUS/OtusDZ1/Dependencies/.build/x86_64-apple-macosx/debug/TestProfiler.build/DataStructures/Array/SwiftArrayManipulator.d",
+    "object": "/Users/genrihberajlik/Development/XcodeProjects/OTUS/OtusDZ1/Dependencies/.build/x86_64-apple-macosx/debug/TestProfiler.build/DataStructures/Array/SwiftArrayManipulator.swift.o",
+    "swiftmodule": "/Users/genrihberajlik/Development/XcodeProjects/OTUS/OtusDZ1/Dependencies/.build/x86_64-apple-macosx/debug/TestProfiler.build/DataStructures/Array/SwiftArrayManipulator~partial.swiftmodule",
+    "swift-dependencies": "/Users/genrihberajlik/Development/XcodeProjects/OTUS/OtusDZ1/Dependencies/.build/x86_64-apple-macosx/debug/TestProfiler.build/DataStructures/Array/SwiftArrayManipulator.swiftdeps"
+  },
+  "/Users/genrihberajlik/Development/XcodeProjects/OTUS/OtusDZ1/Dependencies/.build/checkouts/TestProfiler/Sources/TestProfiler/DataStructures/Dictionary/DictionaryManipulator.swift": {
+    "dependencies": "/Users/genrihberajlik/Development/XcodeProjects/OTUS/OtusDZ1/Dependencies/.build/x86_64-apple-macosx/debug/TestProfiler.build/DataStructures/Dictionary/DictionaryManipulator.d",
+    "object": "/Users/genrihberajlik/Development/XcodeProjects/OTUS/OtusDZ1/Dependencies/.build/x86_64-apple-macosx/debug/TestProfiler.build/DataStructures/Dictionary/DictionaryManipulator.swift.o",
+    "swiftmodule": "/Users/genrihberajlik/Development/XcodeProjects/OTUS/OtusDZ1/Dependencies/.build/x86_64-apple-macosx/debug/TestProfiler.build/DataStructures/Dictionary/DictionaryManipulator~partial.swiftmodule",
+    "swift-dependencies": "/Users/genrihberajlik/Development/XcodeProjects/OTUS/OtusDZ1/Dependencies/.build/x86_64-apple-macosx/debug/TestProfiler.build/DataStructures/Dictionary/DictionaryManipulator.swiftdeps"
+  },
+  "/Users/genrihberajlik/Development/XcodeProjects/OTUS/OtusDZ1/Dependencies/.build/checkouts/TestProfiler/Sources/TestProfiler/DataStructures/Dictionary/SwiftDictionaryManipulator.swift": {
+    "dependencies": "/Users/genrihberajlik/Development/XcodeProjects/OTUS/OtusDZ1/Dependencies/.build/x86_64-apple-macosx/debug/TestProfiler.build/DataStructures/Dictionary/SwiftDictionaryManipulator.d",
+    "object": "/Users/genrihberajlik/Development/XcodeProjects/OTUS/OtusDZ1/Dependencies/.build/x86_64-apple-macosx/debug/TestProfiler.build/DataStructures/Dictionary/SwiftDictionaryManipulator.swift.o",
+    "swiftmodule": "/Users/genrihberajlik/Development/XcodeProjects/OTUS/OtusDZ1/Dependencies/.build/x86_64-apple-macosx/debug/TestProfiler.build/DataStructures/Dictionary/SwiftDictionaryManipulator~partial.swiftmodule",
+    "swift-dependencies": "/Users/genrihberajlik/Development/XcodeProjects/OTUS/OtusDZ1/Dependencies/.build/x86_64-apple-macosx/debug/TestProfiler.build/DataStructures/Dictionary/SwiftDictionaryManipulator.swiftdeps"
+  },
+  "/Users/genrihberajlik/Development/XcodeProjects/OTUS/OtusDZ1/Dependencies/.build/checkouts/TestProfiler/Sources/TestProfiler/DataStructures/Set/SetManipulator.swift": {
+    "dependencies": "/Users/genrihberajlik/Development/XcodeProjects/OTUS/OtusDZ1/Dependencies/.build/x86_64-apple-macosx/debug/TestProfiler.build/DataStructures/Set/SetManipulator.d",
+    "object": "/Users/genrihberajlik/Development/XcodeProjects/OTUS/OtusDZ1/Dependencies/.build/x86_64-apple-macosx/debug/TestProfiler.build/DataStructures/Set/SetManipulator.swift.o",
+    "swiftmodule": "/Users/genrihberajlik/Development/XcodeProjects/OTUS/OtusDZ1/Dependencies/.build/x86_64-apple-macosx/debug/TestProfiler.build/DataStructures/Set/SetManipulator~partial.swiftmodule",
+    "swift-dependencies": "/Users/genrihberajlik/Development/XcodeProjects/OTUS/OtusDZ1/Dependencies/.build/x86_64-apple-macosx/debug/TestProfiler.build/DataStructures/Set/SetManipulator.swiftdeps"
+  },
+  "/Users/genrihberajlik/Development/XcodeProjects/OTUS/OtusDZ1/Dependencies/.build/checkouts/TestProfiler/Sources/TestProfiler/DataStructures/Set/SwiftSetManipulator.swift": {
+    "dependencies": "/Users/genrihberajlik/Development/XcodeProjects/OTUS/OtusDZ1/Dependencies/.build/x86_64-apple-macosx/debug/TestProfiler.build/DataStructures/Set/SwiftSetManipulator.d",
+    "object": "/Users/genrihberajlik/Development/XcodeProjects/OTUS/OtusDZ1/Dependencies/.build/x86_64-apple-macosx/debug/TestProfiler.build/DataStructures/Set/SwiftSetManipulator.swift.o",
+    "swiftmodule": "/Users/genrihberajlik/Development/XcodeProjects/OTUS/OtusDZ1/Dependencies/.build/x86_64-apple-macosx/debug/TestProfiler.build/DataStructures/Set/SwiftSetManipulator~partial.swiftmodule",
+    "swift-dependencies": "/Users/genrihberajlik/Development/XcodeProjects/OTUS/OtusDZ1/Dependencies/.build/x86_64-apple-macosx/debug/TestProfiler.build/DataStructures/Set/SwiftSetManipulator.swiftdeps"
+  },
+  "/Users/genrihberajlik/Development/XcodeProjects/OTUS/OtusDZ1/Dependencies/.build/checkouts/TestProfiler/Sources/TestProfiler/DataStructures/StringGenerator.swift": {
+    "dependencies": "/Users/genrihberajlik/Development/XcodeProjects/OTUS/OtusDZ1/Dependencies/.build/x86_64-apple-macosx/debug/TestProfiler.build/DataStructures/StringGenerator.d",
+    "object": "/Users/genrihberajlik/Development/XcodeProjects/OTUS/OtusDZ1/Dependencies/.build/x86_64-apple-macosx/debug/TestProfiler.build/DataStructures/StringGenerator.swift.o",
+    "swiftmodule": "/Users/genrihberajlik/Development/XcodeProjects/OTUS/OtusDZ1/Dependencies/.build/x86_64-apple-macosx/debug/TestProfiler.build/DataStructures/StringGenerator~partial.swiftmodule",
+    "swift-dependencies": "/Users/genrihberajlik/Development/XcodeProjects/OTUS/OtusDZ1/Dependencies/.build/x86_64-apple-macosx/debug/TestProfiler.build/DataStructures/StringGenerator.swiftdeps"
+  },
+  "/Users/genrihberajlik/Development/XcodeProjects/OTUS/OtusDZ1/Dependencies/.build/checkouts/TestProfiler/Sources/TestProfiler/Profiler.swift": {
+    "dependencies": "/Users/genrihberajlik/Development/XcodeProjects/OTUS/OtusDZ1/Dependencies/.build/x86_64-apple-macosx/debug/TestProfiler.build/Profiler.d",
+    "object": "/Users/genrihberajlik/Development/XcodeProjects/OTUS/OtusDZ1/Dependencies/.build/x86_64-apple-macosx/debug/TestProfiler.build/Profiler.swift.o",
+    "swiftmodule": "/Users/genrihberajlik/Development/XcodeProjects/OTUS/OtusDZ1/Dependencies/.build/x86_64-apple-macosx/debug/TestProfiler.build/Profiler~partial.swiftmodule",
+    "swift-dependencies": "/Users/genrihberajlik/Development/XcodeProjects/OTUS/OtusDZ1/Dependencies/.build/x86_64-apple-macosx/debug/TestProfiler.build/Profiler.swiftdeps"
+  }
+}
