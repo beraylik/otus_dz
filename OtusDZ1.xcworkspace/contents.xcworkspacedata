@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:OtusDZ1.xcodeproj">
+      location = "container:OtusDZ1.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Dependencies/Dependencies.xcodeproj">
    </FileRef>
 </Workspace>

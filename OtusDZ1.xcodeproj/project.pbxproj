@@ -26,6 +26,7 @@
 		F041107F22B0EDDF00D8E1B6 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F041107E22B0EDDF00D8E1B6 /* ProfileViewController.swift */; };
 		F041108222B0F8AB00D8E1B6 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F041108122B0F8AB00D8E1B6 /* FeedViewController.swift */; };
 		F041108422B0FB8000D8E1B6 /* FeedThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F041108322B0FB8000D8E1B6 /* FeedThreeViewController.swift */; };
+		F08F3F26231522F800D3ABD3 /* Dependencies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F08F3F25231522F800D3ABD3 /* Dependencies.framework */; };
 		F0CA58AB22B259A300D6B172 /* Benchmark.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0CA58A922B259A300D6B172 /* Benchmark.storyboard */; };
 		F0CA58AE22B25E6400D6B172 /* BenchmarkBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CA58AD22B25E6400D6B172 /* BenchmarkBehavior.swift */; };
 		F0CA58B322B25FF400D6B172 /* BenchmarkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CA58B122B25FF400D6B172 /* BenchmarkCell.swift */; };
@@ -117,6 +118,7 @@
 		F041107E22B0EDDF00D8E1B6 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		F041108122B0F8AB00D8E1B6 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		F041108322B0FB8000D8E1B6 /* FeedThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedThreeViewController.swift; sourceTree = "<group>"; };
+		F08F3F25231522F800D3ABD3 /* Dependencies.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Dependencies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0CA58AA22B259A300D6B172 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = OtusDZ1/OtusDZ1/Base.lproj/Benchmark.storyboard; sourceTree = "<group>"; };
 		F0CA58AD22B25E6400D6B172 /* BenchmarkBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenchmarkBehavior.swift; sourceTree = "<group>"; };
 		F0CA58B122B25FF400D6B172 /* BenchmarkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenchmarkCell.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F08F3F26231522F800D3ABD3 /* Dependencies.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,6 +193,7 @@
 			children = (
 				F0335D9422A55FC700077257 /* OtusDZ1 */,
 				F0F1F94822D0F215009C5B86 /* OtusShareExtension */,
+				F08F3F1C2315219F00D3ABD3 /* Dependencies */,
 				F0335D9322A55FC700077257 /* Products */,
 				F0D3246E22E8EE9700EF48A0 /* Frameworks */,
 			);
@@ -269,6 +273,13 @@
 			path = Feed;
 			sourceTree = "<group>";
 		};
+		F08F3F1C2315219F00D3ABD3 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
 		F0CA58AC22B259B000D6B172 /* Benchmark */ = {
 			isa = PBXGroup;
 			children = (
@@ -329,6 +340,7 @@
 		F0D3246E22E8EE9700EF48A0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F08F3F25231522F800D3ABD3 /* Dependencies.framework */,
 				F0D324B822EA11A400EF48A0 /* Dependencies.framework */,
 				F0D3246F22E8EE9700EF48A0 /* Dependencies.framework */,
 			);
