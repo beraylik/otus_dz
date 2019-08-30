@@ -27,15 +27,9 @@ class SetViewController: DataStructuresViewController {
 
   let setManipulator = SwiftSetManipulator()
 
-  var creationTime: TimeInterval = 0
-  var add1ObjectTime: TimeInterval = 0
-  var add5ObjectsTime: TimeInterval = 0
-  var add10ObjectsTime: TimeInterval = 0
-  var remove1ObjectTime: TimeInterval = 0
-  var remove5ObjectsTime: TimeInterval = 0
-  var remove10ObjectsTime: TimeInterval = 0
-  var lookup1ObjectTime: TimeInterval = 0
-  var lookup10ObjectsTime: TimeInterval = 0
+    var storage: Storage? = nil
+    
+    var testResults = SetTestModel()
 
   //MARK: - Methods
 
@@ -44,24 +38,37 @@ class SetViewController: DataStructuresViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     createAndTestButton.setTitle("Create Set and Test", for: UIControl.State())
+    // set storage
+    self.storage = ServiceLocator.shared.getService()
+    
+    // Load history
+    if let model = storage?.retrieve("set", from: .documents, as: SetTestModel.self) {
+        testResults = model
+    }
   }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidLoad()
+        // Save history
+        storage?.store(testResults, to: .documents, as: "set")
+    }
 
   //MARK: Superclass creation/testing overrides
 
   override func create(_ size: Int) {
-    creationTime = setManipulator.setupWithObjectCount(size)
+    testResults.creationTime = setManipulator.setupWithObjectCount(size)
   }
 
   override func test() {
     if (setManipulator.setHasObjects()) {
-      add1ObjectTime = setManipulator.add1Object()
-      add5ObjectsTime = setManipulator.add5Objects()
-      add10ObjectsTime = setManipulator.add10Objects()
-      remove1ObjectTime = setManipulator.remove1Object()
-      remove5ObjectsTime = setManipulator.remove5Objects()
-      remove10ObjectsTime = setManipulator.remove10Objects()
-      lookup1ObjectTime = setManipulator.lookup1Object()
-      lookup10ObjectsTime = setManipulator.lookup10Objects()
+      testResults.add1ObjectTime = setManipulator.add1Object()
+      testResults.add5ObjectsTime = setManipulator.add5Objects()
+      testResults.add10ObjectsTime = setManipulator.add10Objects()
+      testResults.remove1ObjectTime = setManipulator.remove1Object()
+      testResults.remove5ObjectsTime = setManipulator.remove5Objects()
+      testResults.remove10ObjectsTime = setManipulator.remove10Objects()
+      testResults.lookup1ObjectTime = setManipulator.lookup1Object()
+      testResults.lookup10ObjectsTime = setManipulator.lookup10Objects()
     } else {
       print("Set is not set up yet!")
     }
@@ -75,31 +82,31 @@ class SetViewController: DataStructuresViewController {
     switch (indexPath as NSIndexPath).row {
     case SetVCRow.creation.rawValue:
       cell.textLabel!.text = "Set Creation:"
-      cell.detailTextLabel!.text = formattedTime(creationTime)
+      cell.detailTextLabel!.text = formattedTime(testResults.creationTime)
     case SetVCRow.add1Object.rawValue:
       cell.textLabel!.text = "Add 1 Object:"
-      cell.detailTextLabel!.text = formattedTime(add1ObjectTime)
+      cell.detailTextLabel!.text = formattedTime(testResults.add1ObjectTime)
     case SetVCRow.add5Objects.rawValue:
       cell.textLabel!.text = "Add 5 Objects:"
-      cell.detailTextLabel!.text = formattedTime(add5ObjectsTime)
+      cell.detailTextLabel!.text = formattedTime(testResults.add5ObjectsTime)
     case SetVCRow.add10Objects.rawValue:
       cell.textLabel!.text = "Add 10 Objects:"
-      cell.detailTextLabel!.text = formattedTime(add10ObjectsTime)
+      cell.detailTextLabel!.text = formattedTime(testResults.add10ObjectsTime)
     case SetVCRow.remove1Object.rawValue:
       cell.textLabel!.text = "Remove 1 Object:"
-      cell.detailTextLabel!.text = formattedTime(remove1ObjectTime)
+      cell.detailTextLabel!.text = formattedTime(testResults.remove1ObjectTime)
     case SetVCRow.remove5Objects.rawValue:
       cell.textLabel!.text = "Remove 5 Objects:"
-      cell.detailTextLabel!.text = formattedTime(remove5ObjectsTime)
+      cell.detailTextLabel!.text = formattedTime(testResults.remove5ObjectsTime)
     case SetVCRow.remove10Objects.rawValue:
       cell.textLabel!.text = "Remove 10 Objects:"
-      cell.detailTextLabel!.text = formattedTime(remove10ObjectsTime)
+      cell.detailTextLabel!.text = formattedTime(testResults.remove10ObjectsTime)
     case SetVCRow.lookup1Object.rawValue:
       cell.textLabel!.text = "Lookup 1 Object:"
-      cell.detailTextLabel!.text = formattedTime(lookup1ObjectTime)
+      cell.detailTextLabel!.text = formattedTime(testResults.lookup1ObjectTime)
     case SetVCRow.lookup10Objects.rawValue:
       cell.textLabel!.text = "Lookup 10 Objects:"
-      cell.detailTextLabel!.text = formattedTime(lookup10ObjectsTime)
+      cell.detailTextLabel!.text = formattedTime(testResults.lookup10ObjectsTime)
     default:
       print("Unhandled row! \((indexPath as NSIndexPath).row)")
     }

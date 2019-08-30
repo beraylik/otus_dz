@@ -24,12 +24,11 @@ class SuffixSequenceViewController: DataStructuresViewController {
             let algo = AlgoProvider()
             return SwiftSequenceManipulator(service: algo)
         }
-        
-    
     }()
     
-    var lookupRandom10Time: TimeInterval = 0
-    var lookupCustomTimesTime: TimeInterval = 0
+    var storage: Storage? = nil
+    
+    var testResults = SuffixTestModel()
     
     //MARK: - Methods
     
@@ -38,6 +37,19 @@ class SuffixSequenceViewController: DataStructuresViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         createAndTestButton.setTitle("Create Sequence and Test", for: [])
+        // set storage
+        self.storage = ServiceLocator.shared.getService()
+        
+        // Load history
+        if let model = storage?.retrieve("suffix", from: .documents, as: SuffixTestModel.self) {
+            testResults = model
+        }
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidLoad()
+        // Save history
+        storage?.store(testResults, to: .documents, as: "suffix")
     }
     
     //MARK: Superclass creation/testing overrides
@@ -48,8 +60,8 @@ class SuffixSequenceViewController: DataStructuresViewController {
     
     override func test() {
         if (sequenceManipulator.arrayHasObjects()) {
-            lookupRandom10Time = sequenceManipulator.lookup10times()
-            lookupCustomTimesTime = sequenceManipulator.lookupCustomTimes()
+            testResults.lookupRandom10Time = sequenceManipulator.lookup10times()
+            testResults.lookupCustomTimesTime = sequenceManipulator.lookupCustomTimes()
         } else {
             print("Sequence not set up yet!")
         }
@@ -62,10 +74,10 @@ class SuffixSequenceViewController: DataStructuresViewController {
         switch (indexPath as NSIndexPath).row {
         case SequenceVCRow.lookupRandom10.rawValue:
             cell.textLabel!.text = "Lookup 10 random substrings:"
-            cell.detailTextLabel!.text = formattedTime(lookupRandom10Time)
+            cell.detailTextLabel!.text = formattedTime(testResults.lookupRandom10Time)
         case SequenceVCRow.lookupCustomTimes.rawValue:
             cell.textLabel!.text = "Lookup preffered times:"
-            cell.detailTextLabel!.text = formattedTime(lookupCustomTimesTime)
+            cell.detailTextLabel!.text = formattedTime(testResults.lookupCustomTimesTime)
         default:
             print("Unhandled row! \((indexPath as NSIndexPath).row)")
         }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Algo {
+class Algo: Codable {
     var name: String
     var intervalOn: TimeInterval = 0
     var intervalOff: TimeInterval = 1
@@ -21,5 +21,30 @@ class Algo {
     
     func suffixed() -> SuffixSequence {
         return SuffixSequence(string: name)
+    }
+    
+    // MARK: - Codable
+    
+    enum CodingKeys: String, CodingKey {
+        case name, intervalOn, intervalOff, color
+    }
+    
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(name, forKey: .name)
+        try container.encode(intervalOn, forKey: .intervalOn)
+        try container.encode(intervalOff, forKey: .intervalOff)
+        try container.encode(color.toHex, forKey: .color)
+    }
+    
+    required init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        
+        self.name = try container.decode(String.self, forKey: .name)
+        self.intervalOn = try container.decode(TimeInterval.self, forKey: .intervalOn)
+        self.intervalOff = try container.decode(TimeInterval.self, forKey: .intervalOff)
+        
+        let hex = try container.decode(String.self, forKey: .color)
+        self.color = UIColor.init(hex: hex) ?? .white
     }
 }

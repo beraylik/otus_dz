@@ -8,6 +8,6 @@
 
 import Foundation
 
-struct FeedData {
+struct FeedData: Codable {
     let name: String
 }

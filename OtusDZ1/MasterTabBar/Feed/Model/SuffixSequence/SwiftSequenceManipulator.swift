@@ -52,7 +52,6 @@ public class SwiftSequenceManipulator: SequenceManipulator {
                 let randString = stringGenerator.generateRandomString(3).lowercased()
                 for algo in self.data where algo.suffix.hasSuffix(randString) {
                     foundInTotal += 1
-                    print("Found with: \(randString)")
                 }
             }
             

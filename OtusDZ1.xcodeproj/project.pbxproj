@@ -26,6 +26,11 @@
 		F041107F22B0EDDF00D8E1B6 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F041107E22B0EDDF00D8E1B6 /* ProfileViewController.swift */; };
 		F041108222B0F8AB00D8E1B6 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F041108122B0F8AB00D8E1B6 /* FeedViewController.swift */; };
 		F041108422B0FB8000D8E1B6 /* FeedThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F041108322B0FB8000D8E1B6 /* FeedThreeViewController.swift */; };
+		F070D78423192E8C001B8D43 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F070D78323192E8C001B8D43 /* Storage.swift */; };
+		F070D78723192F7A001B8D43 /* ArrayTestsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F070D78623192F7A001B8D43 /* ArrayTestsModel.swift */; };
+		F070D78923192F85001B8D43 /* SetTestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F070D78823192F85001B8D43 /* SetTestModel.swift */; };
+		F070D78B23192F94001B8D43 /* DictionaryTestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F070D78A23192F94001B8D43 /* DictionaryTestModel.swift */; };
+		F070D78D2319342F001B8D43 /* SuffixTestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F070D78C2319342F001B8D43 /* SuffixTestModel.swift */; };
 		F08F3F26231522F800D3ABD3 /* Dependencies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F08F3F25231522F800D3ABD3 /* Dependencies.framework */; };
 		F0CA58AB22B259A300D6B172 /* Benchmark.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0CA58A922B259A300D6B172 /* Benchmark.storyboard */; };
 		F0CA58AE22B25E6400D6B172 /* BenchmarkBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CA58AD22B25E6400D6B172 /* BenchmarkBehavior.swift */; };
@@ -118,6 +123,11 @@
 		F041107E22B0EDDF00D8E1B6 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		F041108122B0F8AB00D8E1B6 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		F041108322B0FB8000D8E1B6 /* FeedThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedThreeViewController.swift; sourceTree = "<group>"; };
+		F070D78323192E8C001B8D43 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		F070D78623192F7A001B8D43 /* ArrayTestsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayTestsModel.swift; sourceTree = "<group>"; };
+		F070D78823192F85001B8D43 /* SetTestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTestModel.swift; sourceTree = "<group>"; };
+		F070D78A23192F94001B8D43 /* DictionaryTestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryTestModel.swift; sourceTree = "<group>"; };
+		F070D78C2319342F001B8D43 /* SuffixTestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixTestModel.swift; sourceTree = "<group>"; };
 		F08F3F25231522F800D3ABD3 /* Dependencies.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Dependencies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0CA58AA22B259A300D6B172 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = OtusDZ1/OtusDZ1/Base.lproj/Benchmark.storyboard; sourceTree = "<group>"; };
 		F0CA58AD22B25E6400D6B172 /* BenchmarkBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenchmarkBehavior.swift; sourceTree = "<group>"; };
@@ -259,6 +269,7 @@
 				F0CA58B522B2655900D6B172 /* AlgoProvider.swift */,
 				F0F1F90822C8F03A009C5B86 /* FeedDataProvider.swift */,
 				F0CA591722C2956400D6B172 /* JsonPlaceholderProvider.swift */,
+				F070D78323192E8C001B8D43 /* Storage.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -271,6 +282,17 @@
 				F0EEAA5E22ED958600675EE3 /* ViewModel */,
 			);
 			path = Feed;
+			sourceTree = "<group>";
+		};
+		F070D78523192F68001B8D43 /* TestModels */ = {
+			isa = PBXGroup;
+			children = (
+				F070D78623192F7A001B8D43 /* ArrayTestsModel.swift */,
+				F070D78823192F85001B8D43 /* SetTestModel.swift */,
+				F070D78A23192F94001B8D43 /* DictionaryTestModel.swift */,
+				F070D78C2319342F001B8D43 /* SuffixTestModel.swift */,
+			);
+			path = TestModels;
 			sourceTree = "<group>";
 		};
 		F08F3F1C2315219F00D3ABD3 /* Dependencies */ = {
@@ -418,6 +440,7 @@
 		F0EEAA6022ED959400675EE3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F070D78523192F68001B8D43 /* TestModels */,
 				F0F1F90A22C8F041009C5B86 /* FeedData.swift */,
 				F0D3247122E8F02800EF48A0 /* SuffixSequence */,
 			);
@@ -623,6 +646,7 @@
 				F0F1F8E022C8A976009C5B86 /* SuffixSequence.swift in Sources */,
 				F041107922A9900600D8E1B6 /* DiagramImageProvider.swift in Sources */,
 				F0335DB422A6530100077257 /* SplitViewController.swift in Sources */,
+				F070D78B23192F94001B8D43 /* DictionaryTestModel.swift in Sources */,
 				F0335DAB22A56C3700077257 /* ChangeImageBtn.swift in Sources */,
 				F0335DB222A5722300077257 /* Component.swift in Sources */,
 				F0CA591322C1331500D6B172 /* MyPieChartView.swift in Sources */,
@@ -637,6 +661,8 @@
 				F0CA58BE22B26AC700D6B172 /* StagLayoutFrameHolder.swift in Sources */,
 				F0F1F90F22C8F159009C5B86 /* SuffixSequenceViewController.swift in Sources */,
 				F041107F22B0EDDF00D8E1B6 /* ProfileViewController.swift in Sources */,
+				F070D78723192F7A001B8D43 /* ArrayTestsModel.swift in Sources */,
+				F070D78923192F85001B8D43 /* SetTestModel.swift in Sources */,
 				F0CA58B322B25FF400D6B172 /* BenchmarkCell.swift in Sources */,
 				F041106F22A98D2C00D8E1B6 /* DIagramViewController.swift in Sources */,
 				F0F1F95B22D0F92F009C5B86 /* LocalizeSharedBehaviour.swift in Sources */,
@@ -650,6 +676,7 @@
 				F0CA58B622B2655900D6B172 /* AlgoProvider.swift in Sources */,
 				F0335D9622A55FC700077257 /* AppDelegate.swift in Sources */,
 				F0CA591822C2956400D6B172 /* JsonPlaceholderProvider.swift in Sources */,
+				F070D78D2319342F001B8D43 /* SuffixTestModel.swift in Sources */,
 				F0CA58EA22BAB2E700D6B172 /* SessionSummaryViewController.swift in Sources */,
 				F0D3247522E8F02800EF48A0 /* SuffixManipulator.swift in Sources */,
 				F0CA58E822BAB1AD00D6B172 /* UITableView+Extensions.swift in Sources */,
@@ -661,6 +688,7 @@
 				F0EEAA5B22ED88D400675EE3 /* BenchmarkViewModel.swift in Sources */,
 				F0CA58BC22B26A6200D6B172 /* StagLayout.swift in Sources */,
 				F041108222B0F8AB00D8E1B6 /* FeedViewController.swift in Sources */,
+				F070D78423192E8C001B8D43 /* Storage.swift in Sources */,
 				F0F1F8DC22C892E9009C5B86 /* Algo.swift in Sources */,
 				F0F1F90422C8F000009C5B86 /* ArrayViewController.swift in Sources */,
 				F0CA58B922B2680F00D6B172 /* UIColor+Extensions.swift in Sources */,

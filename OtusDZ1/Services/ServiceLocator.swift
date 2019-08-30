@@ -54,5 +54,6 @@ final class ServiceLocator: ServiceLocation {
         addService(AlgoProvider())
         addService(FeedDataProvider())
         addService(JsonPlaceholderProvider())
+        addService(Storage())
     }
 }
