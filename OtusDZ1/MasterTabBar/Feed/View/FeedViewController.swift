@@ -15,14 +15,6 @@ class FeedViewController: UIViewController {
 
     private var viewModel: FeedViewModel
     
-    private let jsonPlaceholerProvider: JsonPlaceholderProvider = {
-        if let service: JsonPlaceholderProvider = ServiceLocator.shared.getService() {
-            return service
-        } else {
-            return JsonPlaceholderProvider()
-        }
-    }()
-    
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         let dataProvider: FeedDataProvider? = ServiceLocator.shared.getService()
         self.viewModel = FeedViewModel(feedProvider: dataProvider!)
@@ -44,21 +36,6 @@ class FeedViewController: UIViewController {
             DispatchQueue.main.async {
                 self?.tableView.reloadData()
             }
-        }
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        jsonPlaceholerProvider.fetch(url: "/todos") { (result: Result<[Placeholder], Error>) in
-            
-            switch result {
-            case .failure(let error):
-                print(error.localizedDescription)
-            case .success(let responses):
-                for tuple in responses.enumerated() {
-                    print("\(tuple.offset): \(tuple.element.title)")
-                }
-            }
-            
         }
     }
 
