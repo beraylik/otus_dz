@@ -41,7 +41,7 @@ extension UIColor {
     static private func luminanceFor(_ color: UIColor) -> CGFloat {
         let componets = color.cgColor.components ?? []
         
-        var a: [CGFloat] = componets.map({
+        let a: [CGFloat] = componets.map({
             let devided = $0 / 255
             if devided <= 0.03928 {
                 return devided / 12.92

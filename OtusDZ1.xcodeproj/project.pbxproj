@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -31,7 +31,7 @@
 		F070D78923192F85001B8D43 /* SetTestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F070D78823192F85001B8D43 /* SetTestModel.swift */; };
 		F070D78B23192F94001B8D43 /* DictionaryTestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F070D78A23192F94001B8D43 /* DictionaryTestModel.swift */; };
 		F070D78D2319342F001B8D43 /* SuffixTestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F070D78C2319342F001B8D43 /* SuffixTestModel.swift */; };
-		F08F3F26231522F800D3ABD3 /* Dependencies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F08F3F25231522F800D3ABD3 /* Dependencies.framework */; };
+		F09AF31F233E786D0064141B /* TestProfiler in Frameworks */ = {isa = PBXBuildFile; productRef = F09AF31E233E786D0064141B /* TestProfiler */; };
 		F0CA58AB22B259A300D6B172 /* Benchmark.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0CA58A922B259A300D6B172 /* Benchmark.storyboard */; };
 		F0CA58AE22B25E6400D6B172 /* BenchmarkBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CA58AD22B25E6400D6B172 /* BenchmarkBehavior.swift */; };
 		F0CA58B322B25FF400D6B172 /* BenchmarkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CA58B122B25FF400D6B172 /* BenchmarkCell.swift */; };
@@ -184,7 +184,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F08F3F26231522F800D3ABD3 /* Dependencies.framework in Frameworks */,
+				F09AF31F233E786D0064141B /* TestProfiler in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,6 +537,9 @@
 				F0F1F95022D0F215009C5B86 /* PBXTargetDependency */,
 			);
 			name = OtusDZ1;
+			packageProductDependencies = (
+				F09AF31E233E786D0064141B /* TestProfiler */,
+			);
 			productName = OtusDZ1;
 			productReference = F0335D9222A55FC700077257 /* OtusDZ1.app */;
 			productType = "com.apple.product-type.application";
@@ -595,6 +598,9 @@
 				Base,
 			);
 			mainGroup = F0335D8922A55FC700077257;
+			packageReferences = (
+				F09AF31D233E786D0064141B /* XCRemoteSwiftPackageReference "TestProfiler" */,
+			);
 			productRefGroup = F0335D9322A55FC700077257 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1008,6 +1014,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F09AF31D233E786D0064141B /* XCRemoteSwiftPackageReference "TestProfiler" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/beraylik/TestProfiler";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F09AF31E233E786D0064141B /* TestProfiler */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F09AF31D233E786D0064141B /* XCRemoteSwiftPackageReference "TestProfiler" */;
+			productName = TestProfiler;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F0335D8A22A55FC700077257 /* Project object */;
 }

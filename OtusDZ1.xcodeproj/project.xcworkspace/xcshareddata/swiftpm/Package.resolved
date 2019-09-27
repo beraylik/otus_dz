@@ -3,7 +3,7 @@
     "pins": [
       {
         "package": "TestProfiler",
-        "repositoryURL": "https://github.com/beraylik/TestProfiler.git",
+        "repositoryURL": "https://github.com/beraylik/TestProfiler",
         "state": {
           "branch": null,
           "revision": "75f1684a9194c3e99d3a3cb6801ba1c2e5797f62",
