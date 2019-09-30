@@ -10,7 +10,6 @@ import Foundation
 class JobScheduler {
     
     var jobs: [JobQueue] = []
-    
     var completion: (([JobQueue]) -> Void)?
     
     func runJobs() {
